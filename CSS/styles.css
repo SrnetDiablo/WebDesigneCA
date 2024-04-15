@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ffffcc; /* Pale yellow background */
+    color: #001f3f; /* Dark navy blue text */
+    margin: 0; /* Remove default margin */
+}
+
+#header {
+    position: fixed; /* Fixed positioning */
+    top: 0; /* Positioned at the top */
+    left: 0; /* Positioned at the left */
+    padding: 10px; /* Padding around the logo */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+#logo {
+    max-width: 100px; /* Maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#formcontainer {
+    background-color: #ffffcc; /* Yellow background */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 20px; /* Padding inside the container */
+    max-width: 500px; /* Limiting maximum width */
+    width: 80%; /* Set width to take up 80% of the available space */
+    margin-top: 60px; /* Add space below the header */
+    margin-bottom: 20px; /* Add margin below the form container */
+}
+
+#formreservation {
+    margin-bottom: 20px;
+}
+
+#additionalInfo ul {
+    text-align: left;
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    #formcontainer {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
