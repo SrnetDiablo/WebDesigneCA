@@ -8,45 +8,55 @@ body {
     background-color: #ffffcc; /* Pale yellow background */
     color: #001f3f; /* Dark navy blue text */
     margin: 0; /* Remove default margin */
+    font-family: 'Oswald', sans-serif; /* Apply Oswald font to the body */
 }
-
-#header {
-    position: fixed; /* Fixed positioning */
-    top: 0; /* Positioned at the top */
-    left: 0; /* Positioned at the left */
-    padding: 10px; /* Padding around the logo */
-    z-index: 1000; /* Ensure it's above other content */
-}
-
-#logo {
-    max-width: 100px; /* Maximum width for the logo */
-    height: auto; /* Maintain aspect ratio */
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Apply text shadow for depth */
+    color: #001f3f; /* Dark navy blue text */
 }
 
 #formcontainer {
-    background-color: #ffffcc; /* Yellow background */
+    background-color: #f5f5b5; /* Light shade of yellow */
     border-radius: 20px; /* Rounded corners */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Increased shadow effect */
     padding: 20px; /* Padding inside the container */
-    max-width: 500px; /* Limiting maximum width */
-    width: 80%; /* Set width to take up 80% of the available space */
-    margin-top: 60px; /* Add space below the header */
-    margin-bottom: 20px; /* Add margin below the form container */
+    max-width: 400px; /* Increase maximum width */
+    width: auto; /* Set width to take up 95% of the available space */
+    margin-top: 20px; /* Adjusted margin-top */
+    margin-bottom: 20px; /* Adjusted margin-bottom */
+    margin-left: 20px; /* Adiciona uma margem à esquerda para separá-lo dos elementos circundantes */
+    margin-right: 20px; /* Adiciona uma margem à direita para separá-lo dos elementos circundantes */
+    display: flex; /* Display children side by side */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-between; /* Distribute items along the main axis */
+    
 }
 
-#formreservation {
-    margin-bottom: 20px;
+#formreservation select {
+    width: 50% ; /* Make each item take up half of the container width with space in between */
+    display: inline-block; /* Display each item as an inline-block element */
+    margin-bottom: 5px; /* Reduce space between each item */
+    text-align: left; /* Align items to the left */
+}
+#formreservation label {
+    width: 45%; /* Defina a largura da etiqueta */
+    display: inline-block; /* Exiba as etiquetas como blocos de linha */
+    text-align: left; /* Alinhe o texto das etiquetas à direita */
 }
 
-#additionalInfo ul {
-    text-align: left;
-    margin-left: 0;
-    padding-left: 20px;
+#formreservation input {
+    width: 50%; /* Defina a largura dos campos de entrada */
+    display: inline-block; /* Exiba os campos de entrada como blocos de linha */
+}
+#formreservation input[type="submit"] {
+    width: 100%; /* Faz o botão de envio ocupar toda a largura disponível */
+    display: block; /* Define o botão como um bloco para que o alinhamento funcione */
+    margin: 0 auto; /* Define as margens laterais como "auto" para alinhar o botão ao centro */
 }
 
-/* Media query for responsiveness */
-@media screen and (max-width: 768px) {
-    #formcontainer {
-        width: 90%; /* Adjust width for smaller screens */
-    }
+
+#additionalInfo {
+    flex-basis: 40%; /* Text takes up 40% of the container width */
+    text-align: left; /* Align text under the form to the left */
+    margin-left: 10px; /* Add some space between form and text */
 }
