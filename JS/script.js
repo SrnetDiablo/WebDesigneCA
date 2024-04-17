@@ -1,7 +1,7 @@
 function setMinDate() {
     var today = new Date();
     var dd = today.getDate();
-    var mm = today.getMonth() + 1; //January is 0!
+    var mm = today.getMonth() + 1; // January is 0!
     var yyyy = today.getFullYear();
 
     if (dd < 10) {
@@ -15,6 +15,7 @@ function setMinDate() {
     today = yyyy + '-' + mm + '-' + dd;
     document.getElementById("checkin").setAttribute("min", today);
 }
+
 function submitForm() {
     // Verifica se todos os campos estão preenchidos
     var name = document.getElementById("name").value;
@@ -42,4 +43,9 @@ function submitForm() {
         // Se algum campo estiver vazio, não faz nada
         return false;
     }
+}
+
+// Function to go to the reservation page 
+function redirectToReservationPage() {
+    window.location.href = "reservationpage.html";
 }
