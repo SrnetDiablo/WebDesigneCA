@@ -1,0 +1,220 @@
+/*erase all margin and padding*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*Style for html tag*/
+body{
+	font-family: Meiryo, Verdana, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	object-fit: contain;
+	width: 100%;
+	height: auto;
+}
+
+/*hotel logo*/
+#logo{
+	width: 90px;
+	float: left;
+	padding-top: 12px;
+	padding-left: 170px;
+}
+
+#logo a:hover{
+	opacity: 0.7;
+}
+
+/*navigation*/
+header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 10000;
+	overflow: hidden;
+	background-color:  #192f60;
+}
+
+header ul{
+	background-color:  #192f60;
+	width: 70%;
+	float: right;
+}
+
+header li{
+	list-style: none;
+	float: left;
+	text-align: center;
+	width: 24%;
+}
+
+header li a{
+	font-family: Lato;
+	text-decoration: none;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	width: 100%;
+	display: inline-block;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	color: #fff;
+	letter-spacing: 0.3em;
+}
+
+header li a:hover{
+	opacity: 0.8;
+	color: #fff462;
+}
+
+
+#bxslider{
+	margin-top: 100px;
+}
+
+#wrapper{
+	margin: auto;
+}
+
+.introduction{
+	overflow: hidden;
+	background-color:  #eaf2f8;
+	font-family: Lora;
+	font-size: 20px;
+	text-align: center;
+	padding: 100px 80px;
+}
+
+.introduction .left_content{
+	float: left;
+	width: 40%;
+}
+
+.introduction .left_top_content{
+	line-height: 3;
+}
+
+.introduction .left_bottom_content{
+	font-size: 36px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 35px;
+}
+
+.introduction .right_content{
+	float: right;
+	width: 40%	;
+	text-align: center;
+	line-height: 3;
+}
+
+#room_intro{
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+}
+
+.room_container{
+	position: relative;
+	width: 30%;
+	margin-top:60px;
+	margin-bottom: 60px;
+}
+
+.room_container img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.room_container p{
+	position: absolute;
+	top: 60%;
+	left: 30%;
+	font-size: 35px;
+	font-weight: bold;
+	color: #e9bc00;
+	font-family: Bebas Neue;
+	text-align: center;
+}
+
+.room_container a img:hover{
+	opacity: 0.5;
+	transition: 0.2s;
+}
+
+.room_text{
+	background-color: #fff462;
+}
+
+footer{
+	background-color:  #192f60;
+	padding:80px 60px 20px 60px;
+}
+
+#hotel_info{
+	color: #fff;
+	margin-bottom: 80px;
+}
+
+#hotel_info ul{
+	margin: auto;
+	width: 300px;
+}
+
+#hotel_info li{
+	list-style: none;
+	padding-bottom: 20px;
+}
+
+#hotel_info li:first-child{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#hotel_info li a{
+	text-decoration: none;
+	padding-bottom: 20px;
+	color: #fff;
+}
+
+#hotel_info li a:hover{
+	color: #fff462;
+	opacity: 0.7;
+}
+
+#footer_content{
+	margin-bottom: 50px;
+	overflow: hidden;
+	width: 60%;
+	margin: auto;
+}
+
+#footer_content img{
+	width: 70%;
+}
+
+.text_icon_1{
+	width: 180px;
+	color: #fff;
+	float: left;
+	margin-bottom: 70px;
+}
+
+.text_icon_2{
+	width: 180px;
+	color: #fff;
+	float: right;
+}
+
+.copyright{
+	text-align: center;
+	font-weight: bold;
+	color: #fff462;
+}
