@@ -1,18 +1,28 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Loading CSS file -->
   <link rel="stylesheet" href="css/stylesheet.css">
-  <link rel="stylesheet" href="css/jquery.bxslider.css">
-  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/jquery.bxslider.min.css">
+  <!-- Loading Javascript file-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
   <script type="text/javascript" src="js/javascript.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="js/jquery.bxslider.js"></script>
+
+  <link rel="icon" href="images/favicon.png">
   
   <title>SCHENKEL HOTEL</title>
+
 </head>
 <body>
 	<header>
+		<div id="logo">
+			<a href="index.html">	
+				<img src="images/logo_icon.png" alt="hotel_logo">
+			</a>	
+		</div>
 		<ul>
 			<li><a href ="#">HOME</a></li>
 			<li><a href ="#">ROOMS</a></li>
@@ -21,24 +31,66 @@
 		</ul>	
 	</header>
 	<div id ="bxslider">
-		<ul class="slick_slider">
-			<li><img src ="images/main_img1.jpg" alt="main_img1"></li>
-			<li><img src ="images/main_img2.jpg" alt="main_img2"></li>
-			<li><img src ="images/main_img3.jpg" alt="main_img3"></li>
-		</ul>
+		<div><img src ="images/main_slide1.jpg" alt="main_slide1"></div>
+		<div><img src ="images/main_slide2.jpg" alt="main_slide2"></div>
+		<div><img src ="images/main_slide3.jpg" alt="main_slide3"></div>
 	</div>
 	<div id ="wrapper">		
 		<div class ="introduction">
 			<section class="left_content">
-			<p class ="left_top_content">FEELING IN HOME</p>
-			<p class ="left_bottom_content">Care and care in detail</p>
+				<p class ="left_top_content">FEELING IN HOME</p>
+				<p class ="left_bottom_content">Your hotel in the capital of beaches</p>
 			</section>
-			<p class="right_content">The Schenkel hotel is one of the most traditional hotel in Gramado. Since 1997, here all rooms tell a part of our history, with great affection for you to live a unique experience in the Serra Gaúcha.</p>
+			<p class="right_content">The Schenkel hotel is one of the most traditional hotel in Tramandaí. Since 1985, here all rooms tell a part of our history, with great affection for you to live a unique experience in Tramandaí.</p>
+		</div>
+		<div id ="room_intro">
+			<div class="room_container">
+				<a href="#">
+					<section class="room_text">
+						<img src="images/main_room.jpg">
+						<p>Rooms</p>
+					</section>		
+				</a>
+			</div>
+			<div class="room_container">
+				<a href="#">
+					<section class="room_text">
+						<img src="images/main_attractions.jpg">
+						<p>Attractions</p>
+					</section>		
+				</a>
+			</div>
+			<div class="room_container">
+				<a href="#">
+					<section class="room_text">
+						<img src="images/main_reservation.jpg">
+						<p>Reservation</p>
+					</section>		
+				</a>
+			</div>
 		</div>
 	</div>
 	<footer>
+		<div id="hotel_info">
+			<ul>
+				<li>SCHENKEL HOTEL</li>
+				<li>Address: Avenida Fernandes Bastos, 854 Centro, Tramandaí, RS.</li>
+				<li>Phone: (51) 3661 3001</li>
+				<li>Email: <a href="mailto:schenkelhotel.com.br">schenkelhotel.com.br</a></li>
+			</ul>	
+		</div>
+		<div id="footer_content">
+			<section class="text_icon_1">
+				<img src="images/electric_car_icon.png" alt="electric_car_charge">
+				<p>This hotel has a charging station for electric vehicles.</p>
+			</section>
+			<section class="text_icon_2">
+				<img src="images/wifi_icon.png" alt="wifi_icon">
+				<p>High speed Wifi providing.</p>
+			</section>
+		</div>
 		<div class="copyright">
-			<p>COPYRIGHT</p>
+			<p>Developed by DEIVIDI. All rights reserved.</p>
 		</div>
 	</footer>
 </body>
