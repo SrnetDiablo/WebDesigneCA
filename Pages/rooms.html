@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schenkel Hotel Rooms</title>
     <link rel="stylesheet" href="../CSS/styles.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
     <!-- Import Google Font Oswald -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
+<header>
+    <div id="logo">
+        <a href="index.html">	
+            <img src="images/logo_icon.png" alt="hotel_logo">
+        </a>	
+    </div>
+    <ul>
+        <li><a href ="#">HOME</a></li>
+        <li><a href ="#">ROOMS</a></li>
+        <li><a href ="#">CONTENTS</a></li>
+        <li><a href ="#">RESERVATION</a></li>
+    </ul>	
+</header>
 <body class="room-page">
     <h1 class="hotel-title"> Schenkel Hotel Rooms </h1>
     <div id="roomcontainer">
@@ -34,9 +48,78 @@
             </div>
         </div>
     </div>
-    <script src="../JS/script.js"></script> <!-- Link to the JavaScript file -->
-</body>
-</html>
+    <div class="table-container"> <!-- Adiciona uma classe à div que contém a tabela -->
+    <table>
+        <caption>Tariffs</caption>
+        <thead> <!-- get an explanation -->
+          <tr>
+          <!-- Header cells - contains header information (created with the <th> element) . The text in <th> elements are bold and centered by default. -->
+            <th class="standard" colspan="2">Standard Apartment</th>
+            <th class="deluxe" colspan="2">Deluxe Apartment</th>
+            <th class="suite" colspan="2">Suite</th>  </tr>
+        </thead>
+        <tbody>
+          <tr>
+          <!-- Data cells - contains data (created with the <td> element) 
+          The text in <td> elements are regular and left-aligned by default. -->
+            <td>01 Guest</td>
+            <td> € 60 </td>
+            <td>01 Guest</td>
+            <td> € 70 </td>
+            <td>01 Guest</td>
+            <td> € 80 </td>
 
+        </tr>
+          <tr>
+            <td>02 Guests</td>
+            <td> € 80 </td>
+            <td>02 Guests</td>
+            <td> € 90 </td>
+            <td>02 Guests</td>
+            <td> € 100 </td>
+          </tr>
+          <tr>
+            <td>03 Guests</td>
+            <td> € 90 </td>
+            <td>03 Guests</td>
+            <td> € 100 </td>
+            <td>03 Guests</td>
+            <td> € 110 </td>
+          </tr>
+          <tr>
+            <td>04 Guests</td>
+            <td> € 100 </td>
+            <td>04 Guests</td>
+            <td> € 110 </td>
+            <td>04 Guests</td>
+            <td> € 120 </td>    
+          </tr>
+           </tbody>
+      </table>
+    </div>
+      <footer>
+		<div id="hotel_info">
+			<ul>
+				<li>SCHENKEL HOTEL</li>
+				<li>Address: Avenida Fernandes Bastos, 854 Centro, Tramandaí, RS.</li>
+				<li>Phone: (51) 3661 3001</li>
+				<li>Email: <a href="mailto:schenkelhotel.com.br">schenkelhotel.com.br</a></li>
+			</ul>	
+		</div>
+		<div id="footer_content">
+			<section class="text_icon_1">
+				<img src="images/electric_car_icon.png" alt="electric_car_charge">
+				<p>This hotel has a charging station for electric vehicles.</p>
+			</section>
+			<section class="text_icon_2">
+				<img src="images/wifi_icon.png" alt="wifi_icon">
+				<p>High speed Wifi providing.</p>
+			</section>
+		</div>
+		<div class="copyright">
+			<p>Developed by DEIVIDI. All rights reserved.</p>
+		</div>
+	</footer>
+    <script src="../JS/script.js"></script> <!-- Link to the JavaScript file -->
 </body>
 </html>
