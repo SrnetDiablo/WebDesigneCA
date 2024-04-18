@@ -9,10 +9,14 @@
     color: #001f3f; /* Dark navy blue text */
     margin: 0; /* Remove default margin */
     font-family: 'Oswald', sans-serif; /* Apply Oswald font to the body */
+    margin-top: 20px; /* Adiciona espaço mínimo de 20px entre o header e o conteúdo */
+
 }
 .hotel-title {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Apply text shadow for depth */
     color: #001f3f; /* Dark navy blue text */
+    margin-top: 20px; /* Defina a quantidade de margem que deseja */
+
 }
 
 #formcontainer {
@@ -127,4 +131,39 @@
     padding: 10px; /* Add padding inside the room info */
     text-align: left; /* Align text to the left */
     width: calc(50% - 20px); /* Set width for the room info, considering the margin */
+}
+.table-container {
+    margin-top: 20px; /* Adiciona espaço entre a tabela e o contêiner */
+}
+
+table {
+    margin: 0 auto;
+    background-color: #f5f5b5; /* Light shade of yellow */
+    background-color: ; /* Cor de fundo da tabela */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #001f3f; /* Cor das bordas */
+}
+
+th {
+    background-color: #f5f5b5; /* Cor de fundo do cabeçalho */
+}
+.standard {
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+
+.deluxe {
+    grid-column: 3 / span 2;
+    text-align: center;
+}
+
+.suite {
+    grid-column: 5 / span 2;
+    text-align: center;
 }
