@@ -6,120 +6,155 @@
     <title>Schenkel Hotel Rooms</title>
     <link rel="stylesheet" href="../CSS/styles.css"> <!-- Link to the CSS file -->
     <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <link rel="stylesheet" href="../CSS/jquery.bxslider.min.css">
+    <!-- Loading Javascript file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../JS/jquery.bxslider.min.js"></script>
+    <script src="../JS/javascript.js"></script>
+    <!-- Loading favicon file -->
+    <link rel="icon" href="../Images/favicon.png">
     <!-- Import Google Font Oswald -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<header>
-    <div id="logo">
-        <a href="index.html">	
-            <img src="images/logo_icon.png" alt="hotel_logo">
-        </a>	
-    </div>
-    <ul>
-        <li><a href ="#">HOME</a></li>
-        <li><a href ="#">ROOMS</a></li>
-        <li><a href ="#">CONTENTS</a></li>
-        <li><a href ="#">RESERVATION</a></li>
-    </ul>	
+<body>
+<header class="header">
+    <!-- logo link -->
+    <a href="../index.html">
+        <div id="logo">
+            <img src="../Images/logo_icon.png" alt="hotel_logo">
+        </div>
+        <div id="title">	
+            <h2>SCHENKEL HOTEL</h2>
+            <p>the best hotel in Tramandaí</p>	
+        </div>
+    </a>
+    <nav class="nav">
+        <ul class="menu">
+            <li class="top"><a class="nav-link" href ="../index.html">HOME</a></li>
+            <li><a class="nav-link" href ="rooms.html">ROOMS</a></li>
+            <li><a class="nav-link" href ="attraction.html">CONTENTS</a></li>
+            <li><a class="nav-link" href ="reservationpage.html">RESERVATION</a></li>
+        </ul>
+    </nav>	
 </header>
-<body class="room-page">
-    <h1 class="hotel-title"> Schenkel Hotel Rooms </h1>
-    <div id="roomcontainer">
-        <div class="room">
-            <img src="../Images/PHOTO-2024-04-10-14-42-43 3-min.jpg" alt="Apartment Standard" onclick="redirectToReservationPage('reservation page.html');">
-            <div class="room-info">
-                <h2>Apartment Standard</h2>
-                <p>Apartments equipped with TV, satellite dish, telephone, internet access point, minibar, 24-hour room service, and ceiling fan.</p>
+<div id="wrapper">
+    <div class="room-page">
+        <h1 class="hotel-title"> Schenkel Hotel Rooms </h1>
+        <div id="roomcontainer">
+            <div class="room">
+                <img src="../Images/apartment_standard.jpg" alt="Apartment Standard" onclick="redirectToReservationPage('reservation page.html');">
+                <div class="room-info">
+                    <h2>Apartment Standard</h2>
+                    <p>Apartments equipped with TV, satellite dish, telephone, internet access point, minibar, 24-hour room service, and ceiling fan.</p>
+                </div>
+            </div>
+            <div class="room">
+                <img src="../Images/apartment_deluxe.jpg" alt="Apartment Deluxe" onclick="redirectToReservationPage('reservation page.html');">
+                <div class="room-info">
+                    <h2>Apartment Deluxe</h2>
+                    <p>Apartments equipped with TV, satellite dish, telephone, internet access point, minibar, 24-hour room service, and air conditioning.</p>
+                </div>
+            </div>
+            <div class="room">
+                <img src="../Images/suite.jpg" alt="Suite" onclick="redirectToReservationPage('reservation page.html');">
+                <div class="room-info">
+                    <h2>Suite</h2>
+                    <p>Apartments equipped with TV, satellite dish, telephone, internet access point, minibar, 24-hour room service, air conditioning and bathtub.</p>
+                </div>
             </div>
         </div>
-        <div class="room">
-            <img src="../Images/PHOTO-2024-04-10-14-42-50 2-min.jpg" alt="Apartment Deluxe" onclick="redirectToReservationPage('reservation page.html');">
-            <div class="room-info">
-                <h2>Apartment Deluxe</h2>
-                <p>Apartments equipped with TV, satellite dish, telephone, internet access point, minibar, 24-hour room service, and air conditioning.</p>
-            </div>
-        </div>
-        <div class="room">
-            <img src="../Images/PHOTO-2024-04-10-14-42-53 3-min.jpg" alt="Suite" onclick="redirectToReservationPage('reservation page.html');">
-            <div class="room-info">
-                <h2>Suite</h2>
-                <p>Apartments equipped with TV, satellite dish, telephone, internet access point, minibar, 24-hour room service, air conditioning and bathtub.</p>
-            </div>
-        </div>
-    </div>
-    <div class="table-container"> <!-- Adiciona uma classe à div que contém a tabela -->
-    <table>
-        <caption>Tariffs</caption>
-        <thead> <!-- get an explanation -->
-          <tr>
-          <!-- Header cells - contains header information (created with the <th> element) . The text in <th> elements are bold and centered by default. -->
-            <th class="standard" colspan="2">Standard Apartment</th>
-            <th class="deluxe" colspan="2">Deluxe Apartment</th>
-            <th class="suite" colspan="2">Suite</th>  </tr>
-        </thead>
-        <tbody>
-          <tr>
-          <!-- Data cells - contains data (created with the <td> element) 
-          The text in <td> elements are regular and left-aligned by default. -->
-            <td>01 Guest</td>
-            <td> € 60 </td>
-            <td>01 Guest</td>
-            <td> € 70 </td>
-            <td>01 Guest</td>
-            <td> € 80 </td>
+        <div class="table-container"> <!-- Adiciona uma classe à div que contém a tabela -->
+        <table>
+            <caption>Tariffs</caption>
+            <thead> <!-- get an explanation -->
+            <tr>
+            <!-- Header cells - contains header information (created with the <th> element) . The text in <th> elements are bold and centered by default. -->
+                <th class="standard" colspan="2">Standard Apartment</th>
+                <th class="deluxe" colspan="2">Deluxe Apartment</th>
+                <th class="suite" colspan="2">Suite</th>  </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <!-- Data cells - contains data (created with the <td> element) 
+            The text in <td> elements are regular and left-aligned by default. -->
+                <td>01 Guest</td>
+                <td> € 60 </td>
+                <td>01 Guest</td>
+                <td> € 70 </td>
+                <td>01 Guest</td>
+                <td> € 80 </td>
 
-        </tr>
-          <tr>
-            <td>02 Guests</td>
-            <td> € 80 </td>
-            <td>02 Guests</td>
-            <td> € 90 </td>
-            <td>02 Guests</td>
-            <td> € 100 </td>
-          </tr>
-          <tr>
-            <td>03 Guests</td>
-            <td> € 90 </td>
-            <td>03 Guests</td>
-            <td> € 100 </td>
-            <td>03 Guests</td>
-            <td> € 110 </td>
-          </tr>
-          <tr>
-            <td>04 Guests</td>
-            <td> € 100 </td>
-            <td>04 Guests</td>
-            <td> € 110 </td>
-            <td>04 Guests</td>
-            <td> € 120 </td>    
-          </tr>
-           </tbody>
-      </table>
+            </tr>
+            <tr>
+                <td>02 Guests</td>
+                <td> € 80 </td>
+                <td>02 Guests</td>
+                <td> € 90 </td>
+                <td>02 Guests</td>
+                <td> € 100 </td>
+            </tr>
+            <tr>
+                <td>03 Guests</td>
+                <td> € 90 </td>
+                <td>03 Guests</td>
+                <td> € 100 </td>
+                <td>03 Guests</td>
+                <td> € 110 </td>
+            </tr>
+            <tr>
+                <td>04 Guests</td>
+                <td> € 100 </td>
+                <td>04 Guests</td>
+                <td> € 110 </td>
+                <td>04 Guests</td>
+                <td> € 120 </td>    
+            </tr>
+            </tbody>
+        </table>
+        </div>
     </div>
-      <footer>
-		<div id="hotel_info">
-			<ul>
-				<li>SCHENKEL HOTEL</li>
-				<li>Address: Avenida Fernandes Bastos, 854 Centro, Tramandaí, RS.</li>
-				<li>Phone: (51) 3661 3001</li>
-				<li>Email: <a href="mailto:schenkelhotel.com.br">schenkelhotel.com.br</a></li>
-			</ul>	
-		</div>
-		<div id="footer_content">
-			<section class="text_icon_1">
-				<img src="images/electric_car_icon.png" alt="electric_car_charge">
-				<p>This hotel has a charging station for electric vehicles.</p>
-			</section>
-			<section class="text_icon_2">
-				<img src="images/wifi_icon.png" alt="wifi_icon">
-				<p>High speed Wifi providing.</p>
-			</section>
-		</div>
-		<div class="copyright">
-			<p>Developed by DEIVIDI. All rights reserved.</p>
-		</div>
-	</footer>
-    <script src="../JS/script.js"></script> <!-- Link to the JavaScript file -->
+    <footer>
+        <div id="footer_info">
+            <div id="hotel_info">
+                <ul>
+                    <li>SCHENKEL HOTEL</li>
+                    <li>Address: Avenida Fernandes Bastos, 854 Centro, Tramandaí, RS.</li>
+                    <li>Phone: (51) 3661 3001</li>
+                    <li>Email: <a href="mailto:schenkelhotel.com.br">schenkelhotel.com.br</a></li>
+                </ul>	
+            </div>
+            <div id="hotel_meals">
+                <ul>
+                    <li>Meals</li>
+                    <li>Breakfast: 07:00 - 09:30</li>
+                    <li>Lunch: 11:30 - 14:00</li>
+                    <li>Dinner: 19:00 - 22:30</li>
+                </ul>
+            </div>
+            <div id="hotel_check_in">
+                <ul>
+                    <li>CHECK-IN and OUT</li>
+                    <li>CHECK-IN: from 14:00</li>
+                    <li>CHECK-OUT: until 12:00</li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer_content">
+            <div class="text_icon_1">
+                <img src="../images/electric_car_icon.png" alt="electric_car_charge">
+                <p>This hotel has a charging station for electric vehicles.</p>
+            </div>
+            <div class="text_icon_2">
+                <img src="../images/wifi_icon.png" alt="wifi_icon">
+                <p>High speed Wifi providing.</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Developed by DEIVIDI. All rights reserved.</p>
+        </div>
+    </footer>
+        <script src="../JS/script.js"></script> <!-- Link to the JavaScript file -->
+</div>
 </body>
 </html>
