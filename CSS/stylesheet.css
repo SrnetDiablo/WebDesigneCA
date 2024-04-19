@@ -12,6 +12,7 @@ body{
 	padding: 0;
 }
 
+/*Style for images*/
 img{
 	object-fit: contain;
 	width: 100%;
@@ -23,11 +24,28 @@ img{
 	width: 90px;
 	float: left;
 	padding-top: 12px;
-	padding-left: 170px;
+	padding-left: 80px;
 }
 
-#logo a:hover{
+header a:hover{
 	opacity: 0.7;
+}
+
+#title{
+	float: left;
+	font-weight: bold;
+	color: #fff;
+	padding-top: 30px;
+	padding-left: 20px;
+	text-align: center;
+}
+
+#title h2{
+	font-size: 16px;
+}
+
+#title p{
+	font-size: 10px;
 }
 
 /*navigation*/
@@ -44,6 +62,7 @@ header ul{
 	background-color:  #192f60;
 	width: 70%;
 	float: right;
+	
 }
 
 header li{
@@ -73,13 +92,23 @@ header li a:hover{
 }
 
 
+/*index.html*/
+/*Bxslider in top page*/
+
+
 #bxslider{
-	margin-top: 100px;
+	margin-top: 80px;
 }
 
+.bx-viewport{
+	height: auto !important;
+}
+
+/*main content*/
 #wrapper{
 	margin: auto;
 }
+
 
 .introduction{
 	overflow: hidden;
@@ -152,39 +181,46 @@ header li a:hover{
 	background-color: #fff462;
 }
 
+/*style for footer*/
 footer{
 	background-color:  #192f60;
 	padding:80px 60px 20px 60px;
 }
 
-#hotel_info{
+
+
+#footer_info{
 	color: #fff;
 	margin-bottom: 80px;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
 }
 
-#hotel_info ul{
+#footer_info ul{
 	margin: auto;
 	width: 300px;
 }
 
-#hotel_info li{
+#footer_info li{
 	list-style: none;
 	padding-bottom: 20px;
+	font-size: 14px;
 }
 
-#hotel_info li:first-child{
-	font-size: 20px;
+#footer_info li:first-child{
+	font-size: 18px;
 	font-weight: bold;
-	text-align: center;
 }
 
+/*email link*/
 #hotel_info li a{
 	text-decoration: none;
 	padding-bottom: 20px;
 	color: #fff;
 }
 
-#hotel_info li a:hover{
+#hotel_info li a:hover{ 
 	color: #fff462;
 	opacity: 0.7;
 }
@@ -217,4 +253,373 @@ footer{
 	text-align: center;
 	font-weight: bold;
 	color: #fff462;
+}
+
+
+/*attraction.html*/
+#wrapper{
+	background-image: url(../images/background_img.jpg);
+	background-repeat: repeat;
+	background-color: rgba(255, 255, 255, 0.8);
+	background-blend-mode: lighten;
+}
+
+.intro_attraction{
+	margin-top: 110px;
+	padding-top: 160px;
+	padding-bottom: 180px;
+}
+
+.intro_attraction h2{
+	font-family: Montserrat; /*Google font*/
+	font-size: 46px;
+	text-align: center;
+	padding-bottom: 40px;
+	font-weight: bold;
+}
+
+.intro_attraction p{
+	text-align: center;
+	font-size: 20px;
+
+}
+
+#text_img_container{
+	background-color: #eaf2f8;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	font-family: Roboto Slab; /*Google font*/
+}
+
+#attraction_text{
+	text-align: center;
+}
+
+#attraction_text h3{
+	font-size: 36px;
+	margin-bottom: 60px;
+}
+
+#attraction_text p{
+	font-size: 20px;
+	line-height: 3;
+	margin-bottom: 80px;
+}
+
+#attraction_img{
+	display: flex;
+	justify-content: center;
+	gap: 60px;
+	width: 70%;
+	margin: auto;
+}
+
+#text-container, #text-container2, #text-container3, #text-container4 {
+	display: none;
+	text-align: center;
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 24px;
+
+}
+
+
+/*reservation.html*/
+.reservation-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ffffcc; /* Pale yellow background */
+    color: #001f3f; /* Dark navy blue text */
+    margin: 0; /* Remove default margin */
+    font-family: 'Oswald', sans-serif; /* Apply Oswald font to the body */
+    margin-top: 100px; /* Adiciona espaço mínimo de 20px entre o header e o conteúdo */
+	padding-top: 20px;
+	padding-bottom: 80px;
+}
+.hotel-title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Apply text shadow for depth */
+    color: #001f3f; /* Dark navy blue text */
+    margin-top: 20px; /* Defina a quantidade de margem que deseja */
+
+}
+
+#formcontainer {
+    background-color: #f5f5b5; /* Light shade of yellow */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Increased shadow effect */
+    padding: 20px; /* Padding inside the container */
+    max-width: 400px; /* Increase maximum width */
+    width: auto; /* Set width to take up 95% of the available space */
+    max-height: 300px; /* Adjust the max height as needed */
+    overflow-y: auto; /* Add vertical scroll if content exceeds max height */
+    margin: 20px; /* Adjusted margin */
+    display: flex; /* Display children side by side */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-between; /* Distribute items along the main axis */
+}
+
+
+#formreservation select {
+    width: calc(50% - 5px); /* Make each item take up half of the container width with space in between */
+    display: inline-block; /* Display each item as an inline-block element */
+    margin-bottom: 5px; /* Reduce space between each item */
+    text-align: left; /* Align items to the left */
+}
+#formreservation label {
+    width: 45%; /* Defina a largura da etiqueta */
+    display: inline-block; /* Exiba as etiquetas como blocos de linha */
+    text-align: left; /* Alinhe o texto das etiquetas à direita */
+}
+
+#formreservation input {
+    width: 50%; /* Defina a largura dos campos de entrada */
+    display: inline-block; /* Exiba os campos de entrada como blocos de linha */
+}
+#formreservation input[type="submit"] {
+    width: 100%; /* Faz o botão de envio ocupar toda a largura disponível */
+    display: block; /* Define o botão como um bloco para que o alinhamento funcione */
+    margin: 0 auto; /* Define as margens laterais como "auto" para alinhar o botão ao centro */
+}
+
+
+#additionalInfo {
+    flex-basis: 40%; /* Text takes up 40% of the container width */
+    text-align: left; /* Align text under the form to the left */
+    margin-left: 10px; /* Add some space between form and text */
+}
+.room-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ffffcc; /* Pale yellow background */
+    color: #001f3f; /* Dark navy blue text */
+    margin: 0; /* Remove default margin */
+    font-family: 'Oswald', sans-serif; /* Apply Oswald font to the body */
+}
+
+.room-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    height: auto; /* Remove fixed height */
+    flex-direction: column;
+    text-align: center;
+    background-color: #ffffcc; /* Pale yellow background */
+    color: #001f3f; /* Dark navy blue text */
+    margin: 0; /* Remove default margin */
+    font-family: 'Oswald', sans-serif; /* Apply Oswald font to the body */
+}
+.room-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Minimum height of the page */
+    background-color: #ffffcc; /* Pale yellow background */
+    color: #001f3f; /* Dark navy blue text */
+    margin: 0; /* Remove default margin */
+    font-family: 'Oswald', sans-serif; /* Apply Oswald font to the body */
+	padding-top: 150px;
+	padding-bottom: 80px;
+}
+
+.room-title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Apply text shadow for depth */
+    color: #001f3f; /* Dark navy blue text */
+    margin-bottom: 20px; /* Add margin below the title */
+}
+
+#roomcontainer {
+    background-color: #f5f5b5; /* Light shade of yellow */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Increased shadow effect */
+    padding: 20px; /* Padding inside the container */
+    max-width: 800px; /* Maximum width of the container */
+    width: 90%; /* Set width to take up 90% of the available space */
+    display: flex; /* Display children side by side */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-between; /* Distribute items along the main axis */
+}
+
+.room {
+    width: calc(50% - 20px); /* Set width for each room, considering the margin */
+    margin-bottom: 20px; /* Add margin between each room */
+}
+
+.room img {
+    width: 100%; /* Make image fill the container */
+    border-radius: 10px; /* Add rounded corners to the image */
+}
+
+.room-info {
+    padding: 10px; /* Add padding inside the room info */
+    text-align: left; /* Align text to the left */
+    width: calc(50% - 20px); /* Set width for the room info, considering the margin */
+}
+.table-container {
+    margin-top: 20px; /* Adiciona espaço entre a tabela e o contêiner */
+}
+
+table {
+    margin: 0 auto;
+    background-color: #f5f5b5; /* Light shade of yellow */
+    /*background-color: ; /* Cor de fundo da tabela */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #001f3f; /* Cor das bordas */
+}
+
+th {
+    background-color: #f5f5b5; /* Cor de fundo do cabeçalho */
+}
+.standard {
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+
+.deluxe {
+    grid-column: 3 / span 2;
+    text-align: center;
+}
+
+.suite {
+    grid-column: 5 / span 2;
+    text-align: center;
+}
+
+
+
+
+/*responsive design style smartphone size*/
+@media screen and (max-width: 768px) {
+	/*index.html*/
+	#bxslider img {
+		max-width: 100%;
+		height: auto;
+	}
+
+
+	#logo{
+		width: 75px;
+	}
+	
+	#title{
+		padding-top: 25px;
+		  padding-left: 20px;
+	}
+	
+	header ul{
+		width: 100%;
+		margin: auto;
+	}
+	
+	header li a{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		letter-spacing: 0.1em;
+	}
+
+	#bxslider{
+		margin-top: 85px;
+		height: auto;
+	}
+
+	.bx-viewport{
+		height: auto !important;
+	}
+
+	.introduction{
+		padding: 60px 10px;
+	}
+
+	.introduction .left_content {
+		float: none;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.introduction .left_bottom_content{
+		margin-top: 25px;
+	}
+
+	.introduction .right_content{
+		float: none;
+		margin-top: 40px;
+		width: 100%;
+	}
+
+	#room_intro{
+		display: block;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.room_container{
+		width: 80%;
+		margin: auto;
+		padding: 20px 0;
+	}
+
+	footer{
+		padding: 40px 0 20px;
+	}
+
+	#footer_info{
+		display: block;
+		margin-bottom: 40px;
+	}
+
+	#footer_info ul{
+		width: 250px;
+		margin: auto;
+	}
+
+	#footer_info li:first-child{
+		padding-top: 25px;
+	}
+
+	#footer_content{
+		width: 80%;
+	}
+
+	.text_icon_1{ 
+		width: 150px;
+		margin-bottom: 50px;
+		padding-left: 25px;
+	}
+
+	.text_icon_2{
+		width: 150px;
+	}
+
+
+	/*attraction.html*/
+	.intro_attraction{
+		padding-top: 120px;
+	}
+
+	#attraction_img{
+		display: block;
+	}
+
+	#container_box{
+		padding-bottom: 50px;
+	}
+
+
+	/*reservation.html*/
+	.reservation-page{
+		padding-top: 80px;
+	}
 }
