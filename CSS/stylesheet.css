@@ -1,327 +1,330 @@
-/*erase all margin and padding*/
-*{
-	margin: 0;
-	padding: 0;
+/* Resetting margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
 }
 
-/*Style for html tag*/
-body{
-	font-family: Meiryo, Verdana, Helvetica, Arial, sans-serif;
-	font-size: 16px;
-	margin: 0;
-	padding: 0;
+/* Styling for the body */
+body {
+    font-family: Meiryo, Verdana, Helvetica, Arial, sans-serif; /* Default font style */
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
-/*Style for images*/
-img{
-	object-fit: contain;
-	width: 100%;
-	height: auto;
+/* Styling for images */
+img {
+    object-fit: contain; /* Ensure images maintain aspect ratio */
+    width: 100%; /* Make images responsive */
+    height: auto; /* Ensure images scale proportionally */
 }
 
-/*hotel logo*/
-#logo{
-	width: 90px;
-	float: left;
-	padding-top: 12px;
-	padding-left: 80px;
+/* Styling for hotel logo, name, and tagline */
+#logo {
+    width: 90px; /* Set the width of the logo */
+    float: left; /* Float the logo to the left */
+    padding-top: 12px; /* Add padding to the top of the logo */
+    padding-left: 80px; /* Add padding to the left of the logo */
 }
 
-header a:hover{
-	opacity: 0.7;
+header a:hover {
+    opacity: 0.7; /* Reduce opacity on hover for better visual feedback */
 }
 
-#title{
-	float: left;
-	font-weight: bold;
-	color: #fff;
-	padding-top: 30px;
-	padding-left: 20px;
-	text-align: center;
+#title {
+    float: left; /* Float the title to the left */
+    font-weight: bold; /* Apply bold font weight to the title */
+    color: #fff; /* Set text color to white */
+    padding-top: 30px; /* Add padding to the top of the title */
+    padding-left: 20px; /* Add padding to the left of the title */
+    text-align: center; /* Center-align the title text */
 }
 
-#title h2{
-	font-size: 16px;
+#title h2 {
+    font-size: 16px; /* Set font size for the title */
 }
 
-#title p{
-	font-size: 10px;
+#title p {
+    font-size: 10px; /* Set font size for the tagline */
 }
 
-/*navigation*/
-header{
-	position: fixed;
-	width: 100%;
-	top: 0;
-	z-index: 10000;
-	overflow: hidden;
-	background-color:  #192f60;
+/* Styling for the navigation */
+header {
+    position: fixed; /* Fix the header position */
+    width: 100%; /* Set the width of the header to 100% */
+    top: 0; /* Position the header at the top of the viewport */
+    z-index: 10000; /* Set a high z-index to ensure header appears above other content */
+    overflow: hidden; /* Hide any overflowing content */
+    background-color:  #192f60; /* Set background color for the header */
 }
 
-header ul{
-	background-color:  #192f60;
-	width: 70%;
-	float: right;
-	
+header ul {
+    background-color:  #192f60; /* Set background color for the navigation */
+    width: 70%; /* Set width for the navigation */
+    float: right; /* Float the navigation to the right */
 }
 
-header li{
-	list-style: none;
-	float: left;
-	text-align: center;
-	width: 24%;
+header li {
+    list-style: none; /* Remove default list styling */
+    float: left; /* Float list items horizontally */
+    text-align: center; /* Center-align list items */
+    width: 24%; /* Set width for individual list items */
 }
 
-header li a{
-	font-family: Lato;
-	text-decoration: none;
-	text-align: center;
-	font-size: 15px;
-	font-weight: bold;
-	width: 100%;
-	display: inline-block;
-	padding-top: 45px;
-	padding-bottom: 45px;
-	color: #fff;
-	letter-spacing: 0.3em;
+header li a {
+    font-family: Lato; /* Specify font family for navigation links */
+    text-decoration: none; /* Remove underline from navigation links */
+    text-align: center; /* Center-align navigation links */
+    font-size: 15px; /* Set font size for navigation links */
+    font-weight: bold; /* Apply bold font weight to navigation links */
+    width: 100%; /* Set width for navigation links */
+    display: inline-block; /* Display navigation links as inline-block elements */
+    padding-top: 45px; /* Add padding to the top of navigation links */
+    padding-bottom: 45px; /* Add padding to the bottom of navigation links */
+    color: #fff; /* Set text color for navigation links to white */
+    letter-spacing: 0.3em; /* Add letter spacing to navigation links */
 }
 
-header li a:hover{
-	opacity: 0.8;
-	color: #fff462;
+header li a:hover {
+    opacity: 0.8; /* Reduce opacity on hover for better visual feedback */
+    color: #fff462; /* Change text color on hover */
 }
 
+/* Styling for the index.html */
 
-/*index.html*/
-/*Bxslider in top page*/
-
-
-#bxslider{
-	margin-top: 80px;
+/* Bxslider in the top page */
+#bxslider {
+    margin-top: 80px; /* Add margin to the top of the bxslider */
 }
 
-.bx-viewport{
-	height: auto !important;
+.bx-viewport {
+    height: auto !important; /* Set height of bxslider viewport to auto */
 }
 
-/*main content*/
-#wrapper{
-	margin: auto;
+/* Main content */
+#wrapper {
+    margin: auto; /* Center-align main content */
 }
 
-
-.introduction{
-	overflow: hidden;
-	background-color:  #eaf2f8;
-	font-family: Lora;
-	font-size: 20px;
-	text-align: center;
-	padding: 100px 80px;
+.introduction {
+    overflow: hidden; /* Hide overflowing content */
+    background-color:  #eaf2f8; /* Set background color for introduction */
+    font-family: Lora; /* Specify font family for introduction text */
+    font-size: 20px; /* Set font size for introduction text */
+    text-align: center; /* Center-align introduction text */
+    padding: 100px 80px; /* Add padding to the introduction */
 }
 
-.introduction .left_content{
-	float: left;
-	width: 40%;
+.introduction .left_content {
+    float: left; /* Float the left content to the left */
+    width: 40%; /* Set width for the left content */
 }
 
-.introduction .left_top_content{
-	line-height: 3;
+.introduction .left_top_content {
+    line-height: 3; /* Set line height for the top content */
 }
 
-.introduction .left_bottom_content{
-	font-size: 36px;
-	text-align: center;
-	font-weight: bold;
-	margin-top: 35px;
+.introduction .left_bottom_content {
+    font-size: 36px; /* Set font size for the bottom content */
+    text-align: center; /* Center-align the bottom content */
+    font-weight: bold; /* Apply bold font weight to the bottom content */
+    margin-top: 35px; /* Add margin to the top of the bottom content */
 }
 
-.introduction .right_content{
-	float: right;
-	width: 40%	;
-	text-align: center;
-	line-height: 3;
+.introduction .right_content {
+    float: right; /* Float the right content to the right */
+    width: 40%; /* Set width for the right content */
+    text-align: center; /* Center-align the right content */
+    line-height: 3; /* Set line height for the right content */
 }
 
-#room_intro{
-	display: flex;
-	justify-content: center;
-	gap: 25px;
+#room_intro {
+    display: flex; /* Use flexbox for room introduction */
+    justify-content: center; /* Center-align items */
+    gap: 25px; /* Set gap between items */
 }
 
-.room_container{
-	position: relative;
-	width: 30%;
-	margin-top:60px;
-	margin-bottom: 60px;
+.room_container {
+    position: relative; /* Set position to relative for room containers */
+    width: 30%; /* Set width for room containers */
+    margin-top: 60px; /* Add margin to the top of room containers */
+    margin-bottom: 60px; /* Add margin to the bottom of room containers */
 }
 
-.room_container img{
-	width: 100%;
-	height: auto;
-	display: block;
+.room_container img {
+    width: 100%; /* Set width of images to 100% */
+    height: auto; /* Ensure images maintain aspect ratio */
+    display: block; /* Display images as block elements */
 }
 
-.room_container p{
-	position: absolute;
-	top: 60%;
-	left: 30%;
-	font-size: 35px;
-	font-weight: bold;
-	color: #e9bc00;
-	font-family: Bebas Neue;
-	text-align: center;
+.room_container p {
+    position: absolute; /* Set position to absolute for room text */
+    top: 60%; /* Position room text at 60% from the top */
+    left: 30%; /* Position room text at 30% from the left */
+    font-size: 35px; /* Set font size for room text */
+    font-weight: bold; /* Apply bold font weight to room text */
+    color: #e9bc00; /* Set text color for room text */
+    font-family: Bebas Neue; /* Specify font family for room text */
+    text-align: center; /* Center-align room text */
 }
 
-.room_container a img:hover{
-	opacity: 0.5;
-	transition: 0.2s;
+.room_container a img:hover {
+    opacity: 0.5; /* Reduce opacity on hover for better visual feedback */
+    transition: 0.2s; /* Add transition effect */
 }
 
-.room_text{
-	background-color: #fff462;
+.room_text {
+    background-color: #fff462; /* Set background color for room text */
 }
 
-/*style for footer*/
-footer{
-	background-color:  #192f60;
-	padding:80px 60px 20px 60px;
+/* Styling for the footer */
+footer {
+    background-color:  #192f60; /* Set background color for the footer */
+    padding: 80px 60px 20px 60px; /* Add padding to the footer */
 }
 
-
-
-#footer_info{
-	color: #fff;
-	margin-bottom: 80px;
-	display: flex;
-	justify-content: center;
-	gap: 30px;
+#footer_info {
+    color: #fff; /* Set text color for footer info */
+    margin-bottom: 80px; /* Add margin to the bottom of footer info */
+    display: flex; /* Use flexbox for footer info */
+    justify-content: center; /* Center-align items */
+    gap: 30px; /* Set gap between items */
 }
 
-#footer_info ul{
-	margin: auto;
-	width: 300px;
+#footer_info ul {
+    margin: auto; /* Center-align unordered list */
+    width: 300px; /* Set width for unordered list */
 }
 
-#footer_info li{
-	list-style: none;
-	padding-bottom: 20px;
-	font-size: 14px;
+#footer_info li {
+    list-style: none; /* Remove default list styling */
+    padding-bottom: 20px; /* Add padding to the bottom of list items */
+    font-size: 14px; /* Set font size for list items */
 }
 
-#footer_info li:first-child{
-	font-size: 18px;
-	font-weight: bold;
+#footer_info li:first-child {
+    font-size: 18px; /* Set font size for the first list item */
+    font-weight: bold; /* Apply bold font weight to the first list item */
 }
 
-/*email link*/
-#hotel_info li a{
-	text-decoration: none;
-	padding-bottom: 20px;
-	color: #fff;
+/* Email link */
+#hotel_info li a {
+    text-decoration: none; /* Remove underline from email link */
+    padding-bottom: 20px; /* Add padding to the bottom of email link */
+    color: #fff; /* Set text color for email link */
 }
 
-#hotel_info li a:hover{ 
-	color: #fff462;
-	opacity: 0.7;
+#hotel_info li a:hover {
+    color: #fff462; /* Change text color on hover */
+    opacity: 0.7; /* Reduce opacity on hover for better visual feedback */
 }
 
-#footer_content{
-	margin-bottom: 50px;
-	overflow: hidden;
-	width: 60%;
-	margin: auto;
+#footer_content {
+    margin-bottom: 50px; /* Add margin to the bottom of footer content */
+    overflow: hidden; /* Hide overflowing content */
+    width: 60%; /* Set width for footer content */
+    margin: auto; /* Center-align footer content */
 }
 
-#footer_content img{
-	width: 70%;
+#footer_content img {
+    width: 70%; /* Set width for images in footer content */
 }
 
-.text_icon_1{
-	width: 180px;
-	color: #fff;
-	float: left;
-	margin-bottom: 70px;
+.text_icon_1 {
+    width: 180px; /* Set width for the first text icon */
+    color: #fff; /* Set text color for the first text icon */
+    float: left; /* Float the first text icon to the left */
+    margin-bottom: 70px; /* Add margin to the bottom of the first text icon */
 }
 
-.text_icon_2{
-	width: 180px;
-	color: #fff;
-	float: right;
+.text_icon_2 {
+    width: 180px; /* Set width for the second text icon */
+    color: #fff; /* Set text color for the second text icon */
+    float: right; /* Float the second text icon to the right */
 }
 
-.copyright{
-	text-align: center;
-	font-weight: bold;
-	color: #fff462;
+.copyright {
+    text-align: center; /* Center-align copyright text */
+    font-weight: bold; /* Apply bold font weight to copyright text */
+    color: #fff462; /* Set text color for copyright text */
 }
 
 
-/*attraction.html*/
-#wrapper{
-	background-image: url(../images/background_img.jpg);
-	background-repeat: repeat;
-	background-color: rgba(255, 255, 255, 0.8);
-	background-blend-mode: lighten;
+
+
+
+/* Styling for attraction.html */
+
+/* Background image and color for the wrapper */
+#wrapper {
+    background-image: url(../images/background_img.jpg); /* Background image */
+    background-repeat: repeat; /* Repeat the background image */
+    background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
+    background-blend-mode: lighten; /* Blend mode for the background */
 }
 
-.intro_attraction{
-	margin-top: 110px;
-	padding-top: 160px;
-	padding-bottom: 180px;
+/* Styling for the introduction section */
+.intro_attraction {
+    margin-top: 110px; /* Margin from the top */
+    padding-top: 160px; /* Padding from the top */
+    padding-bottom: 180px; /* Padding from the bottom */
 }
 
-.intro_attraction h2{
-	font-family: Montserrat; /*Google font*/
-	font-size: 46px;
-	text-align: center;
-	padding-bottom: 40px;
-	font-weight: bold;
+.intro_attraction h2 {
+    font-family: Montserrat; /* Font family for the heading */
+    font-size: 46px; /* Font size for the heading */
+    text-align: center; /* Center align the text */
+    padding-bottom: 40px; /* Padding from the bottom */
+    font-weight: bold; /* Bold font weight */
 }
 
-.intro_attraction p{
-	text-align: center;
-	font-size: 20px;
-
+.intro_attraction p {
+    text-align: center; /* Center align the text */
+    font-size: 20px; /* Font size */
 }
 
-#text_img_container{
-	background-color: #eaf2f8;
-	padding-top: 80px;
-	padding-bottom: 80px;
-	font-family: Roboto Slab; /*Google font*/
+/* Styling for the text and image container */
+#text_img_container, #text_img_container_2 {
+    background-color: #eaf2f8; /* Background color */
+    padding-top: 80px; /* Padding from the top */
+    padding-bottom: 80px; /* Padding from the bottom */
+    font-family: Roboto Slab; /* Font family */
 }
 
-#attraction_text{
-	text-align: center;
+/* Styling for the text */
+#attraction_text, #attraction_text_2 {
+    text-align: center; /* Center align the text */
 }
 
-#attraction_text h3{
-	font-size: 36px;
-	margin-bottom: 60px;
+#attraction_text h3, #attraction_text_2 h3 {
+    font-size: 36px; /* Font size for the heading */
+    margin-bottom: 60px; /* Margin from the bottom */
 }
 
-#attraction_text p{
-	font-size: 20px;
-	line-height: 3;
-	margin-bottom: 80px;
+#attraction_text p, #attraction_text_2 p {
+    font-size: 20px; /* Font size */
+    line-height: 3; /* Line height */
+    margin-bottom: 80px; /* Margin from the bottom */
 }
 
-#attraction_img{
-	display: flex;
-	justify-content: center;
-	gap: 60px;
-	width: 70%;
-	margin: auto;
+/* Styling for the image container */
+#attraction_img, #attraction_img_2 {
+    display: flex; /* Flex display */
+    justify-content: center; /* Center align the content */
+    gap: 60px; /* Gap between elements */
+    width: 70%; /* Width */
+    margin: auto; /* Center align the container */
 }
 
+/* Styling for the text container */
 #text-container, #text-container2, #text-container3, #text-container4 {
-	display: none;
-	text-align: center;
-	margin-top: 10px;
-	font-weight: bold;
-	font-size: 24px;
-
+    display: none; /* Hide the text container by default */
+    text-align: center; /* Center align the text */
+    margin-top: 10px; /* Margin from the top */
+    font-weight: bold; /* Bold font weight */
+    font-size: 24px; /* Font size */
 }
+
 
 
 /*reservation.html*/
@@ -501,125 +504,131 @@ th {
 
 
 
-/*responsive design style smartphone size*/
+/* Responsive design styles for smartphone size */
+
 @media screen and (max-width: 768px) {
-	/*index.html*/
-	#bxslider img {
-		max-width: 100%;
-		height: auto;
-	}
+    /* Styling for index.html */
 
+    #bxslider img {
+        max-width: 100%; /* Set maximum width for images in the slider */
+        height: auto; /* Allow images to scale proportionally */
+    }
 
-	#logo{
-		width: 75px;
-	}
-	
-	#title{
-		padding-top: 25px;
-		  padding-left: 20px;
-	}
-	
-	header ul{
-		width: 100%;
-		margin: auto;
-	}
-	
-	header li a{
-		padding-top: 20px;
-		padding-bottom: 20px;
-		letter-spacing: 0.1em;
-	}
+    #logo {
+        width: 75px; /* Adjust width of logo for smaller screens */
+    }
 
-	#bxslider{
-		margin-top: 85px;
-		height: auto;
-	}
+    #title {
+        padding-top: 25px; /* Adjust padding for title */
+        padding-left: 20px; /* Adjust padding for title */
+    }
 
-	.bx-viewport{
-		height: auto !important;
-	}
+    header ul {
+        width: 100%; /* Make navigation list full width */
+        margin: auto; /* Center-align navigation list */
+    }
 
-	.introduction{
-		padding: 60px 10px;
-	}
+    header li a {
+        padding-top: 20px; /* Adjust padding for navigation links */
+        padding-bottom: 20px; /* Adjust padding for navigation links */
+        letter-spacing: 0.1em; /* Adjust letter spacing for navigation links */
+        font-size: 12px; /* Adjust font size for navigation links */
+    }
 
-	.introduction .left_content {
-		float: none;
-		width: 100%;
-		box-sizing: border-box;
-	}
+    #bxslider {
+        margin-top: 85px; /* Adjust margin for slider */
+        height: auto; /* Allow slider height to adjust automatically */
+    }
 
-	.introduction .left_bottom_content{
-		margin-top: 25px;
-	}
+    .bx-viewport {
+        height: auto !important; /* Allow viewport height to adjust automatically */
+    }
 
-	.introduction .right_content{
-		float: none;
-		margin-top: 40px;
-		width: 100%;
-	}
+    .introduction {
+        padding: 60px 10px; /* Adjust padding for introduction section */
+    }
 
-	#room_intro{
-		display: block;
-		padding-top: 60px;
-		padding-bottom: 60px;
-	}
+    .introduction .left_content {
+        float: none; /* Remove float for left content */
+        width: 100%; /* Set width to 100% for left content */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
 
-	.room_container{
-		width: 80%;
-		margin: auto;
-		padding: 20px 0;
-	}
+    .introduction .left_bottom_content {
+        margin-top: 25px; /* Adjust margin for bottom content */
+    }
 
-	footer{
-		padding: 40px 0 20px;
-	}
+    .introduction .right_content {
+        float: none; /* Remove float for right content */
+        margin-top: 40px; /* Adjust margin for right content */
+        width: 100%; /* Set width to 100% for right content */
+    }
 
-	#footer_info{
-		display: block;
-		margin-bottom: 40px;
-	}
+    #room_intro {
+        display: block; /* Change display to block for room introduction */
+        padding-top: 60px; /* Adjust padding for room introduction */
+        padding-bottom: 60px; /* Adjust padding for room introduction */
+    }
 
-	#footer_info ul{
-		width: 250px;
-		margin: auto;
-	}
+    .room_container {
+        width: 80%; /* Set width to 80% for room containers */
+        margin: auto; /* Center-align room containers */
+        padding: 20px 0; /* Adjust padding for room containers */
+    }
 
-	#footer_info li:first-child{
-		padding-top: 25px;
-	}
+    footer {
+        padding: 40px 0 20px; /* Adjust padding for footer */
+    }
 
-	#footer_content{
-		width: 80%;
-	}
+    #footer_info {
+        display: block; /* Change display to block for footer info */
+        margin-bottom: 40px; /* Adjust margin for footer info */
+    }
 
-	.text_icon_1{ 
-		width: 150px;
-		margin-bottom: 50px;
-		padding-left: 25px;
-	}
+    #footer_info ul {
+        width: 250px; /* Set width for unordered list in footer info */
+        margin: auto; /* Center-align unordered list in footer info */
+    }
 
-	.text_icon_2{
-		width: 150px;
-	}
+    #footer_info li:first-child {
+        padding-top: 25px; /* Adjust padding for the first list item in footer info */
+    }
 
+    #footer_content {
+        width: 80%; /* Set width to 80% for footer content */
+    }
 
-	/*attraction.html*/
-	.intro_attraction{
-		padding-top: 120px;
-	}
+    .text_icon_1 {
+        width: 150px; /* Set width for the first text icon */
+        margin-bottom: 50px; /* Adjust margin for the first text icon */
+        padding-left: 25px; /* Adjust padding for the first text icon */
+    }
 
-	#attraction_img{
-		display: block;
-	}
+    .text_icon_2 {
+        width: 150px; /* Set width for the second text icon */
+    }
 
-	#container_box{
-		padding-bottom: 50px;
-	}
+    /* Styling for attraction.html */
 
+    .intro_attraction {
+        padding-top: 120px; /* Adjust padding for introduction section */
+    }
 
-	/*reservation.html*/
-	.reservation-page{
-		padding-top: 80px;
-	}
+    #attraction_img,
+    attraction_img_2 {
+        display: block; /* Change display to block for attraction images */
+    }
+
+    #container_box,
+    #container_box_2,
+    #container_box_3,
+    #container_box_4 {
+        padding-bottom: 50px; /* Adjust padding for container boxes */
+    }
+
+    /* Styling for reservation.html */
+
+    .reservation-page {
+        padding-top: 80px; /* Adjust padding for reservation page */
+    }
 }
