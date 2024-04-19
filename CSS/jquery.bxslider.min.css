@@ -1,3 +1,8 @@
+/* plug in for bxslider downloadued from GitHub, URL: https://github.com/stevenwanderski/bxslider-4
+*Written by: Steven Wanderski - http://stevenwanderski.com
+*
+*License
+Released under the MIT license - http://opensource.org/licenses/MIT*/
 .bx-wrapper{
     position:relative;padding:0;-ms-touch-action:pan-y;touch-action:pan-y;-moz-box-shadow:0 0 5px #ccc;-webkit-box-shadow:0 0 5px #ccc;box-shadow:0 0 5px #ccc;border:5px solid #192f60;background:#fff
 }
