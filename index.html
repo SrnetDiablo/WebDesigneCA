@@ -4,91 +4,124 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Loading CSS file -->
-  <link rel="stylesheet" href="css/stylesheet.css">
-  <link rel="stylesheet" href="css/jquery.bxslider.min.css">
-  <!-- Loading Javascript file-->
+  <link rel="stylesheet" href="CSS/stylesheet.css">
+  <link rel="stylesheet" href="CSS/jquery.bxslider.min.css">
+  <!-- Loading Javascript file -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/jquery.bxslider.min.js"></script>
-  <script type="text/javascript" src="js/javascript.js"></script>
-
-  <link rel="icon" href="images/favicon.png">
-  
-  <title>SCHENKEL HOTEL</title>
+  <script src="JS/javascript.js"></script>
+  <!-- Loading favicon file -->
+  <link rel="icon" href="Images/favicon.png">
+  <!-- Import Google Font Oswald -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- title -->
+  <title>Schenkel Hotel Top</title>
 
 </head>
 <body>
-	<header>
-		<div id="logo">
-			<a href="index.html">	
-				<img src="images/logo_icon.png" alt="hotel_logo">
-			</a>	
-		</div>
-		<ul>
-			<li><a href ="#">HOME</a></li>
-			<li><a href ="#">ROOMS</a></li>
-			<li><a href ="#">CONTENTS</a></li>
-			<li><a href ="#">RESERVATION</a></li>
-		</ul>	
+	<header class="header">
+		<!-- Hotel logo, name, tagline link -->
+		<a href="index.html">
+			<div id="logo">
+				<img src="Images/logo_icon.png" alt="hotel_logo">
+			</div>
+			<div id="title">	
+				<h2>SCHENKEL HOTEL</h2> <!-- Hotel name -->
+				<p>the best hotel in Tramandaí</p>	<!-- Tagline -->
+			</div>
+		</a>
+		<!-- navigation -->
+		<nav class="nav">
+			<ul class="menu">
+				<li class="top"><a class="nav-link" href ="index.html">HOME</a></li>
+				<li><a class="nav-link" href ="Pages/rooms.html">ROOMS</a></li>
+				<li><a class="nav-link" href ="Pages/attraction.html">CONTENTS</a></li>
+				<li><a class="nav-link" href ="Pages/reservationpage.html">RESERVATION</a></li>
+			</ul>
+		</nav>	
 	</header>
+	<!-- main images slider -->
 	<div id ="bxslider">
-		<div><img src ="images/main_slide1.jpg" alt="main_slide1"></div>
-		<div><img src ="images/main_slide2.jpg" alt="main_slide2"></div>
-		<div><img src ="images/main_slide3.jpg" alt="main_slide3"></div>
+		<div><img src ="Images/main_slide1.jpg" alt="main_slide1"></div>
+		<div><img src ="Images/main_slide2.jpg" alt="main_slide2"></div>
+		<div><img src ="Images/main_slide3.jpg" alt="main_slide3"></div>
 	</div>
+	<!-- main body -->
 	<div id ="wrapper">		
 		<div class ="introduction">
-			<section class="left_content">
+			<div class="left_content">
 				<p class ="left_top_content">FEELING IN HOME</p>
 				<p class ="left_bottom_content">Your hotel in the capital of beaches</p>
-			</section>
+			</div>
 			<p class="right_content">The Schenkel hotel is one of the most traditional hotel in Tramandaí. Since 1985, here all rooms tell a part of our history, with great affection for you to live a unique experience in Tramandaí.</p>
 		</div>
+		<!-- image link -->
 		<div id ="room_intro">
 			<div class="room_container">
-				<a href="#">
-					<section class="room_text">
-						<img src="images/main_room.jpg">
+				<a href="Pages/rooms.html">
+					<div class="room_text">
+						<img src="Images/main_room.jpg" alt="main_room_img">
 						<p>Rooms</p>
-					</section>		
+					</div>		
 				</a>
 			</div>
 			<div class="room_container">
-				<a href="#">
-					<section class="room_text">
-						<img src="images/main_attractions.jpg">
+				<a href="Pages/attraction.html">
+					<div class="room_text">
+						<img src="Images/main_attractions.jpg" alt="main_attraction_img">
 						<p>Attractions</p>
-					</section>		
+					</div>		
 				</a>
 			</div>
 			<div class="room_container">
-				<a href="#">
-					<section class="room_text">
-						<img src="images/main_reservation.jpg">
+				<a href="Pages/reservationpage.html">
+					<div class="room_text">
+						<img src="Images/main_reservation.jpg" alt="main_reservation_img">
 						<p>Reservation</p>
-					</section>		
+					</div>		
 				</a>
 			</div>
 		</div>
 	</div>
+	<!-- footer content -->
 	<footer>
-		<div id="hotel_info">
-			<ul>
-				<li>SCHENKEL HOTEL</li>
-				<li>Address: Avenida Fernandes Bastos, 854 Centro, Tramandaí, RS.</li>
-				<li>Phone: (51) 3661 3001</li>
-				<li>Email: <a href="mailto:schenkelhotel.com.br">schenkelhotel.com.br</a></li>
-			</ul>	
+		<div id="footer_info">
+			<div id="hotel_info">
+				<ul>
+					<li>SCHENKEL HOTEL</li>
+					<li>Address: Avenida Fernandes Bastos, 854 Centro, Tramandaí, RS.</li>
+					<li>Phone: (51) 3661 3001</li>
+					<li>Email: <a href="mailto:schenkelhotel.com.br">schenkelhotel.com.br</a></li>
+				</ul>	
+			</div>
+			<div id="hotel_meals">
+				<ul>
+					<li>Meals</li>
+					<li>Breakfast: 07:00 - 09:30</li>
+					<li>Lunch: 11:30 - 14:00</li>
+					<li>Dinner: 19:00 - 22:30</li>
+				</ul>
+			</div>
+			<div id="hotel_check_in">
+				<ul>
+					<li>CHECK-IN and OUT</li>
+					<li>CHECK-IN: from 14:00</li>
+					<li>CHECK-OUT: until 12:00</li>
+				</ul>
+			</div>
 		</div>
 		<div id="footer_content">
-			<section class="text_icon_1">
+			<div class="text_icon_1">
 				<img src="images/electric_car_icon.png" alt="electric_car_charge">
 				<p>This hotel has a charging station for electric vehicles.</p>
-			</section>
-			<section class="text_icon_2">
+			</div>
+			<div class="text_icon_2">
 				<img src="images/wifi_icon.png" alt="wifi_icon">
 				<p>High speed Wifi providing.</p>
-			</section>
+			</div>
 		</div>
+		<!-- copyright -->
 		<div class="copyright">
 			<p>Developed by DEIVIDI. All rights reserved.</p>
 		</div>
