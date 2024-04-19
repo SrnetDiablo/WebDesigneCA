@@ -6,25 +6,41 @@
     <title>Hotel Schenkel Reservation</title>
     <link rel="stylesheet" href="../CSS/styles.css"> <!-- Link to the CSS file -->
     <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <link rel="stylesheet" href="../CSS/jquery.bxslider.min.css">
+    <!-- Loading Javascript file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../JS/jquery.bxslider.min.js"></script>
+    <script src="../JS/javascript.js"></script>
+    <!-- Loading favicon file -->
+    <link rel="icon" href="../Images/favicon.png">
+
     <!-- Import Google Font Oswald -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<header>
-    <div id="logo">
-        <a href="index.html">	
-            <img src="" alt="hotel_logo">
-        </a>	
-    </div>
-    <ul>
-        <li><a href ="#">HOME</a></li>
-        <li><a href ="#">ROOMS</a></li>
-        <li><a href ="#">CONTENTS</a></li>
-        <li><a href ="#">RESERVATION</a></li>
-    </ul>	
+<body>
+<header class="header">
+    <!-- logo link -->
+    <a href="../index.html">
+        <div id="logo">
+            <img src="../Images/logo_icon.png" alt="hotel_logo">
+        </div>
+        <div id="title">	
+            <h2>SCHENKEL HOTEL</h2>
+            <p>the best hotel in Tramandaí</p>	
+        </div>
+    </a>
+    <nav class="nav">
+        <ul class="menu">
+            <li class="top"><a class="nav-link" href ="../index.html">HOME</a></li>
+            <li><a class="nav-link" href ="rooms.html">ROOMS</a></li>
+            <li><a class="nav-link" href ="attraction.html">CONTENTS</a></li>
+            <li><a class="nav-link" href ="reservationpage.html">RESERVATION</a></li>
+        </ul>
+    </nav>	
 </header>
-<body class="reservation-page" onload="setMinDate()">
-    </div>
+<div id="wrapper">
+<div class="reservation-page" onload="setMinDate()">
     <h1 class="hotel-title">Schenkel Hotel</h1>
     <h2> Please fill out the reservation form to make your booking.</h2> <!-- Added h1 element -->
     <div id="formcontainer"> <!-- Form container with rounded edges -->
@@ -94,24 +110,43 @@
         <p>We want to make it as easy as possible for you to get the help you need.</p>
     </div>
     <script src="../JS/script.js"></script> <!-- Link to the JavaScript file -->
+    </div>
+</div>
 	<footer>
-		<div id="hotel_info">
-			<ul>
-				<li>SCHENKEL HOTEL</li>
-				<li>Address: Avenida Fernandes Bastos, 854 Centro, Tramandaí, RS.</li>
-				<li>Phone: (51) 3661 3001</li>
-				<li>Email: <a href="mailto:schenkelhotel.com.br">schenkelhotel.com.br</a></li>
-			</ul>	
+		<div id="footer_info">
+			<div id="hotel_info">
+				<ul>
+					<li>SCHENKEL HOTEL</li>
+					<li>Address: Avenida Fernandes Bastos, 854 Centro, Tramandaí, RS.</li>
+					<li>Phone: (51) 3661 3001</li>
+					<li>Email: <a href="mailto:schenkelhotel.com.br">schenkelhotel.com.br</a></li>
+				</ul>	
+			</div>
+			<div id="hotel_meals">
+				<ul>
+					<li>Meals</li>
+					<li>Breakfast: 07:00 - 09:30</li>
+					<li>Lunch: 11:30 - 14:00</li>
+					<li>Dinner: 19:00 - 22:30</li>
+				</ul>
+			</div>
+			<div id="hotel_check_in">
+				<ul>
+					<li>CHECK-IN and OUT</li>
+					<li>CHECK-IN: from 14:00</li>
+					<li>CHECK-OUT: until 12:00</li>
+				</ul>
+			</div>
 		</div>
 		<div id="footer_content">
-			<section class="text_icon_1">
-				<img src="images/electric_car_icon.png" alt="electric_car_charge">
+			<div class="text_icon_1">
+				<img src="../images/electric_car_icon.png" alt="electric_car_charge">
 				<p>This hotel has a charging station for electric vehicles.</p>
-			</section>
-			<section class="text_icon_2">
-				<img src="images/wifi_icon.png" alt="wifi_icon">
+            </div>
+			<div class="text_icon_2">
+				<img src="../images/wifi_icon.png" alt="wifi_icon">
 				<p>High speed Wifi providing.</p>
-			</section>
+            </div>
 		</div>
 		<div class="copyright">
 			<p>Developed by DEIVIDI. All rights reserved.</p>
