@@ -1,143 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Loading CSS file -->
-    <link rel="stylesheet" href="../CSS/styles.css"> <!-- Link to the CSS file -->
-    <link rel="stylesheet" href="../CSS/stylesheet.css">
-    <link rel="stylesheet" href="../CSS/jquery.bxslider.min.css">
-    <!-- Loading Javascript file -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../JS/jquery.bxslider.min.js"></script>
-    <script src="../JS/javascript.js"></script>
-    <!-- Loading favicon file -->
+    <!-- CSS files -->
+    <link rel="stylesheet" href="../CSS/styles.css"> <!-- Main stylesheet -->
+    <link rel="stylesheet" href="../CSS/stylesheet.css"> <!-- Additional stylesheet -->
+    <link rel="stylesheet" href="../CSS/jquery.bxslider.min.css"> <!-- Stylesheet for bxslider -->
+    <!-- JavaScript files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jQuery library -->
+    <script src="../JS/jquery.bxslider.min.js"></script> <!-- Bxslider library -->
+    <script src="../JS/javascript.js"></script> <!-- Custom JavaScript file -->
+    <!-- Favicon -->
     <link rel="icon" href="../Images/favicon.png">
-    <!-- Import Google Font Oswald -->
+    <!-- Google Font - Oswald -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- title -->
+    <!-- Title -->
     <title>Schenkel Hotel Attractions</title>
-
 </head>
 <body>
-	<header class="header">
-        <!-- logo link -->
+    <header class="header">
+        <!-- Hotel logo and title link -->
         <a href="../index.html">
             <div id="logo">
                 <img src="../Images/logo_icon.png" alt="hotel_logo">
             </div>
-            <div id="title">	
+            <div id="title">  
                 <h2>SCHENKEL HOTEL</h2>
-                <p>the best hotel in Tramandaí</p>	
+                <p>the best hotel in Tramandaí</p>   
             </div>
         </a>
-        <!-- navigator -->
+        <!-- Navigation menu -->
         <nav class="nav">
             <ul class="menu">
+                <!-- Navigation menu items -->
                 <li class="top"><a class="nav-link" href ="../index.html">HOME</a></li>
                 <li><a class="nav-link" href ="rooms.html">ROOMS</a></li>
-                <li><a class="nav-link" href ="attraction.html">CONTENTS</a></li>
+                <li><a class="nav-link" href ="attraction.html">ATTRACTION</a></li>
                 <li><a class="nav-link" href ="reservationpage.html">RESERVATION</a></li>
             </ul>
-        </nav>	
+        </nav> 
     </header>
-        <!-- main content -->
-		<div id ="wrapper">
-            <!-- introduction for attractions from hotel-->
-            <div class="intro_attraction">
-                <h2>Providing a relaxing stay</h2>
-                <p>The hotel offers a variety of attractions to help you relax and unwind during your precious time.</p>
-            </div>    
-            <!-- texts and images for the seervice -->
-            <div id="text_img_container">
-                <div id="attraction_text">
-                    <h3>INDOOR and OUTDOOR POOlS</h3>
-                    <p>We proved both indoor and outdoor pools, Customer can enjoy our pools all year round, regardless of the weather.</p>
-                </div>
-                <div id="attraction_img">
-                    <div id="container_box">
-                        <div id="image_container">
-                            <img id ="image" src="../images/outdoor_pool.jpg" alt="outdoor_pool">
-                        </div>    
-                        <div id="text-container">
-                            <p>Outdoor Pool</p>
-                        </div>
-                    </div>      
-                    <div id="container_box_2">
-                        <div id="image_container_2">
-                            <img id ="image2" src="../images/indoor_pool.jpg" alt="indoor_pool">
-                        </div>
-                        <div id="text-container2">
-                            <p>Indoor Pool</p>
-                        </div>
-                    </div>  
-                </div>
+    <!-- Main content -->
+    <div id ="wrapper">
+        <!-- Introduction section for hotel attractions -->
+        <div class="intro_attraction">
+            <h2>Providing a relaxing stay</h2>
+            <p>The hotel offers a variety of attractions to help you relax and unwind during your precious time.</p>
+        </div>    
+        <!-- Texts and images for the service section -->
+        <div id="text_img_container">
+            <!-- Indoor and Outdoor Pools -->
+            <div id="attraction_text">
+                <h3>INDOOR and OUTDOOR POOLS</h3>
+                <p>We provide both indoor and outdoor pools. Customers can enjoy our pools all year round, regardless of the weather.</p>
             </div>
-            <!-- texts and images for the seervice -->
-            <div id="text_img_container_2">
-                <div id="attraction_text_2">
-                    <h3>RESTAUNT</h3>
-                    <p>Enjoy your meals, we offer you authentic Brazilian foods.</p>
-                </div>
-                <div id="attraction_img_2">
-                    <div id="container_box_3">
-                        <div id="image_container_3">
-                            <img id ="image3" src="../Images/restaurant1.jpg" alt="restaurant1_img">
-                        </div>    
-                        <div id="text-container3">
-                            <p>Buffet style Breakfast</p>
-                        </div>
-                    </div>      
-                    <div id="container_box4">
-                        <div id="image_container_4">
-                            <img id ="image4" src="../Images/restaurant2.jpg" alt="restaurant2_img">
-                        </div>
-                        <div id="text-container4">
-                            <p>Cozy dining room</p>
-                        </div>
-                    </div>  
-                </div>
+            <div id="attraction_img">
+                <div id="container_box">
+                    <!-- Outdoor Pool -->
+                    <div id="image_container">
+                        <img id ="image" src="../images/outdoor_pool.jpg" alt="outdoor_pool">
+                    </div>    
+                    <div id="text-container">
+                        <p>Outdoor Pool</p>
+                    </div>
+                </div>      
+                <div id="container_box_2">
+                    <!-- Indoor Pool -->
+                    <div id="image_container_2">
+                        <img id ="image2" src="../images/indoor_pool.jpg" alt="indoor_pool">
+                    </div>
+                    <div id="text-container2">
+                        <p>Indoor Pool</p>
+                    </div>
+                </div>  
             </div>
         </div>
-        <footer>
-            <div id="footer_info">
-                <div id="hotel_info">
-                    <ul>
-                        <li>SCHENKEL HOTEL</li>
-                        <li>Address: Avenida Fernandes Bastos, 854 Centro, Tramandaí, RS.</li>
-                        <li>Phone: (51) 3661 3001</li>
-                        <li>Email: <a href="mailto:schenkelhotel.com.br">schenkelhotel.com.br</a></li>
-                    </ul>	
-                </div>
-                <div id="hotel_meals">
-                    <ul>
-                        <li>Meals</li>
-                        <li>Breakfast: 07:00 - 09:30</li>
-                        <li>Lunch: 11:30 - 14:00</li>
-                        <li>Dinner: 19:00 - 22:30</li>
-                    </ul>
-                </div>
-                <div id="hotel_check_in">
-                    <ul>
-                        <li>CHECK-IN and OUT</li>
-                        <li>CHECK-IN: from 14:00</li>
-                        <li>CHECK-OUT: until 12:00</li>
-                    </ul>
-                </div>
+        <!-- Texts and images for the service section -->
+        <div id="text_img_container_2">
+            <!-- Restaurant -->
+            <div id="attraction_text_2">
+                <h3>RESTAURANT</h3>
+                <p>Enjoy your meals; we offer you authentic Brazilian foods.</p>
             </div>
-            <div id="footer_content">
-                <div class="text_icon_1">
-                    <img src="../images/electric_car_icon.png" alt="electric_car_charge">
-                    <p>This hotel has a charging station for electric vehicles.</p>
-                </div>
-                <div class="text_icon_2">
-                    <img src="../images/wifi_icon.png" alt="wifi_icon">
-                    <p>High speed Wifi providing.</p>
-                </div>
+            <div id="attraction_img_2">
+                <div id="container_box_3">
+                    <!-- Buffet style Breakfast -->
+                    <div id="image_container_3">
+                        <img id ="image3" src="../Images/restaurant1.jpg" alt="restaurant1_img">
+                    </div>    
+                    <div id="text-container3">
+                        <p>Buffet style Breakfast</p>
+                    </div>
+                </div>      
+                <div id="container_box4">
+                    <!-- Cozy dining room -->
+                    <div id="image_container_4">
+                        <img id ="image4" src="../Images/restaurant2.jpg" alt="restaurant2_img">
+                    </div>
+                    <div id="text-container4">
+                        <p>Cozy dining room</p>
+                    </div>
+                </div>  
             </div>
-            <div class="copyright">
-                <p>Developed by DEIVIDI. All rights reserved.</p>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div id="footer_info">
+            <!-- Footer information -->
+            <div id="hotel_info">
+                <ul>
+                    <li>SCHENKEL HOTEL</li>
+                    <li>Address: Avenida Fernandes Bastos, 854 Centro, Tramandaí, RS.</li>
+                    <li>Phone: (51) 3661 3001</li>
+                    <li>Email: <a href="mailto:schenkelhotel.com.br">schenkelhotel.com.br</a></li>
+                </ul>   
             </div>
-        </footer>
+            <div id="hotel_meals">
+                <ul>
+                    <!-- Hotel meals timing -->
+                    <li>Meals</li>
+                    <li>Breakfast: 07:00 - 09:30</li>
+                    <li>Lunch: 11:30 - 14:00</li>
+                    <li>Dinner: 19:00 - 22:30</li>
+                </ul>
+            </div>
+            <div id="hotel_check_in">
+                <ul>
+                    <!-- Hotel check-in and check-out timing -->
+                    <li>CHECK-IN and OUT</li>
+                    <li>CHECK-IN: from 14:00</li>
+                    <li>CHECK-OUT: until 12:00</li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer_content">
+            <!-- Footer additional content -->
+            <div class="text_icon_1">
+                <img src="../images/electric_car_icon.png" alt="electric_car_charge">
+                <p>This hotel has a charging station for electric vehicles.</p>
+            </div>
+            <div class="text_icon_2">
+                <img src="../images/wifi_icon.png" alt="wifi_icon">
+                <p>High speed Wifi providing.</p>
+            </div>
+        </div>
+        <!-- Copyright notice -->
+        <div class="copyright">
+            <p>Developed by DEIVIDI. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+</html>
