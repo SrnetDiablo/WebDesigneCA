@@ -307,19 +307,13 @@ footer {
     margin-bottom: 80px; /* Margin from the bottom */
 }
 
-/* Styling for the image container section */
+/* Styling for the image container */
 #attraction_img, #attraction_img_2 {
     display: flex; /* Flex display */
     justify-content: center; /* Center align the content */
     gap: 60px; /* Gap between elements */
     width: 70%; /* Width */
     margin: auto; /* Center align the container */
-}
-
-/* Style for the image */
-#image_container:hover, #image_container_2:hover, #image_container_3:hover, #image_container_4:hover{
-	cursor: pointer; /* hover image content*/
-	opacity: 0.7;
 }
 
 /* Styling for the text container */
@@ -335,13 +329,15 @@ footer {
 
 /*reservation.html*/
 .reservation-page {
+    background-image: url(../images/background_img.jpg); /* Background image */
+    background-blend-mode: lighten; /* Blend mode for the background */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
     text-align: center;
-    background-color: #ffffcc; /* Pale yellow background */
+    background-color:  rgba(255, 255, 255, 0.8); /* Pale yellow background */
     color: #001f3f; /* Dark navy blue text */
     margin: 0; /* Remove default margin */
     font-family: 'Oswald', sans-serif; /* Apply Oswald font to the body */
@@ -353,24 +349,26 @@ footer {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Apply text shadow for depth */
     color: #001f3f; /* Dark navy blue text */
     margin-top: 20px; /* Defina a quantidade de margem que deseja */
-
+    margin-bottom: 40px;
 }
 
 #formcontainer {
-    background-color: #f5f5b5; /* Light shade of yellow */
+    background-color: #eaf2f8; /* Background color */
     border-radius: 20px; /* Rounded corners */
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Increased shadow effect */
     padding: 20px; /* Padding inside the container */
     max-width: 400px; /* Increase maximum width */
-    width: auto; /* Set width to take up 95% of the available space */
-    max-height: 300px; /* Adjust the max height as needed */
+    width: 50%; /* Set width to take up 95% of the available space */
+    max-height: 500px; /* Adjust the max height as needed */
     overflow-y: auto; /* Add vertical scroll if content exceeds max height */
     margin: 20px; /* Adjusted margin */
     display: flex; /* Display children side by side */
     flex-wrap: wrap; /* Allow wrapping */
     justify-content: space-between; /* Distribute items along the main axis */
 }
-
+#formreservation {
+    width: 100%;
+}
 
 #formreservation select {
     width: calc(50% - 5px); /* Make each item take up half of the container width with space in between */
@@ -400,37 +398,22 @@ footer {
     text-align: left; /* Align text under the form to the left */
     margin-left: 10px; /* Add some space between form and text */
 }
-.room-page {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Align items to the top */
-    height: 100vh;
+#successMessage { 
+    display:flex;
     flex-direction: column;
-    text-align: center;
-    background-color: #ffffcc; /* Pale yellow background */
-    color: #001f3f; /* Dark navy blue text */
-    margin: 0; /* Remove default margin */
-    font-family: 'Oswald', sans-serif; /* Apply Oswald font to the body */
 }
 
+/* ROOM PAGE*/
+
 .room-page {
+    background-image: url(../images/background_img.jpg); /* Background image */
+    background-blend-mode:lighten; /* Blend mode for the background */
     display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Align items to the top */
-    height: auto; /* Remove fixed height */
     flex-direction: column;
-    text-align: center;
-    background-color: #ffffcc; /* Pale yellow background */
-    color: #001f3f; /* Dark navy blue text */
-    margin: 0; /* Remove default margin */
-    font-family: 'Oswald', sans-serif; /* Apply Oswald font to the body */
-}
-.room-page {
-    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* Minimum height of the page */
-    background-color: #ffffcc; /* Pale yellow background */
+    background-color: rgba(255, 255, 255, 0.8); /* Pale yellow background */
     color: #001f3f; /* Dark navy blue text */
     margin: 0; /* Remove default margin */
     font-family: 'Oswald', sans-serif; /* Apply Oswald font to the body */
@@ -441,11 +424,11 @@ footer {
 .room-title {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Apply text shadow for depth */
     color: #001f3f; /* Dark navy blue text */
-    margin-bottom: 20px; /* Add margin below the title */
+    margin-bottom: 60px; /* Add margin below the title */
 }
 
 #roomcontainer {
-    background-color: #f5f5b5; /* Light shade of yellow */
+    background-color: #eaf2f8; /* Background color */
     border-radius: 20px; /* Rounded corners */
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Increased shadow effect */
     padding: 20px; /* Padding inside the container */
@@ -477,8 +460,7 @@ footer {
 
 table {
     margin: 0 auto;
-    background-color: #f5f5b5; /* Light shade of yellow */
-    /*background-color: ; /* Cor de fundo da tabela */
+    background-color: #eaf2f8; /* Background color */
     border-collapse: collapse;
     width: 100%;
 }
@@ -490,7 +472,7 @@ th, td {
 }
 
 th {
-    background-color: #f5f5b5; /* Cor de fundo do cabeçalho */
+    background-color: #eaf2f8; /* Background color */
 }
 .standard {
     grid-column: 1 / span 2;
@@ -636,5 +618,19 @@ th {
 
     .reservation-page {
         padding-top: 80px; /* Adjust padding for reservation page */
+    }
+    #roomcontainer {
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    .room{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .room-info {
+        width: 100%;
+        text-align: justify;
     }
 }
