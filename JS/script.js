@@ -23,7 +23,7 @@ function submitForm() {
     var email = document.getElementById("email").value;
     var checkin = document.getElementById("checkin").value;
     var checkout = document.getElementById("checkout").value;
-    var apartment = document.getElementById("apartment").value;
+    var apartment = document.querySelector('input[name="apartment"]:checked');
     var adults = document.getElementById("adults").value;
     var children = document.getElementById("children").value;
 
@@ -36,7 +36,8 @@ function submitForm() {
         document.getElementById("email").value = "";
         document.getElementById("checkin").value = "";
         document.getElementById("checkout").value = "";
-        document.getElementById("apartment").value = "";
+        // Limpa o botão de opção selecionado
+        apartment.checked = false;
         document.getElementById("adults").value = "";
         document.getElementById("children").value = "";
     } else {
