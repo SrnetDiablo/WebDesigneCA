@@ -27,7 +27,12 @@ function submitForm() {
     var adults = document.getElementById("adults").value;
     var children = document.getElementById("children").value;
 
-    if (name && phone && email && checkin && checkout && apartment && adults && children) {
+    // Convertendo as datas de string para objetos Date
+    var checkinDate = new Date(checkin);
+    var checkoutDate = new Date(checkout);
+
+    // Verificando se alguma data está vazia ou se a data de check-out é anterior à data de check-in
+    if (name && phone && email && checkin && checkout && apartment && adults && children && checkinDate <= checkoutDate) {
         // Mostra a mensagem de sucesso
         document.getElementById("successMessage").style.display = "block";
         // Limpa os campos do formulário
@@ -41,10 +46,12 @@ function submitForm() {
         document.getElementById("adults").value = "";
         document.getElementById("children").value = "";
     } else {
-        // Se algum campo estiver vazio, não faz nada
+        // Se algum campo estiver vazio ou a data de check-out for anterior à data de check-in, mostra uma mensagem de erro
+        alert("Please fill out all fields correctly and ensure that the check-out date is after the check-in date.");
         return false;
     }
 }
+
 
 // Function to go to the reservation page 
 function redirectToReservationPage() {
