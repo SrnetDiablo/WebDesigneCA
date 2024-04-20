@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="setMinDate()"> <!-- Move o evento onload para o corpo do documento -->
 <header class="header">
     <!-- logo link -->
     <a href="../index.html">
@@ -40,7 +40,7 @@
     </nav>	
 </header>
 <div id="wrapper">
-<div class="reservation-page" onload="setMinDate()">
+<div class="reservation-page">
     <h1 class="hotel-title">Schenkel Hotel</h1>
     <h2> Please fill out the reservation form to make your booking.</h2> <!-- Added h1 element -->
     <div id="formcontainer"> <!-- Form container with rounded edges -->
@@ -67,14 +67,22 @@
                     <input type="date" id="checkout" name="checkout" required onchange="calculateDays()">
                 </div>
                 <div class="input-group">
-                    <label for="apartment">Choose an Apartment:</label>
-                    <select id="apartment" name="apartment">
-                        <option value="standard">Standard Apartment</option>
-                        <option value="deluxe">Deluxe Apartment</option>
-                        <option value="suite">Suite</option>
-                    </select>
+                    <label>Choose an Apartment:</label>
+                    <div class="radio-wrapper">
+                        <input type="radio" id="standard" name="apartment" value="standard" checked>
+                        <label for="standard">Standard Apartment</label>
+                    </div>
+                    <div class="radio-wrapper">
+                        <input type="radio" id="deluxe" name="apartment" value="deluxe">
+                        <label for="deluxe">Deluxe Apartment</label>
+                    </div>
+                    <div class="radio-wrapper">
+                        <input type="radio" id="suite" name="apartment" value="suite">
+                        <label for="suite">Suite</label>
+                    </div>
                 </div>
-                <div class="input-group">
+                
+               <div class="input-group">
                     <label for="adults">Number of Adults:</label>
                     <select id="adults" name="adults">
                         <option value="1">1</option>
