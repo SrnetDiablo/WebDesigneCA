@@ -307,13 +307,19 @@ footer {
     margin-bottom: 80px; /* Margin from the bottom */
 }
 
-/* Styling for the image container */
+/* Styling for the image container section */
 #attraction_img, #attraction_img_2 {
     display: flex; /* Flex display */
     justify-content: center; /* Center align the content */
     gap: 60px; /* Gap between elements */
     width: 70%; /* Width */
     margin: auto; /* Center align the container */
+}
+
+/* Style for the image */
+#image_container:hover, #image_container_2:hover, #image_container_3:hover, #image_container_4:hover{
+	cursor: pointer; /* hover image content*/
+	opacity: 0.7;
 }
 
 /* Styling for the text container */
