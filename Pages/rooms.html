@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character encoding and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
     <title>Schenkel Hotel Rooms</title>
+    <!-- Link to external CSS files -->
     <link rel="stylesheet" href="../CSS/stylesheet.css">
     <link rel="stylesheet" href="../CSS/jquery.bxslider.min.css">
-    <!-- Loading Javascript file -->
+    <!-- Loading jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Loading jQuery bxSlider plugin -->
     <script src="../JS/jquery.bxslider.min.js"></script>
+    <!-- Loading custom JavaScript file -->
     <script src="../JS/javascript.js"></script>
+    <script src="../JS/script.js"></script>
     <!-- Loading favicon file -->
     <link rel="icon" href="../Images/favicon.png">
-    <!-- Import Google Font Oswald -->
+    <!-- Importing Google Font - Oswald -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="header">
-    <!-- logo link -->
+    <!-- Logo and title of the website -->
     <a href="../index.html">
         <div id="logo">
             <img src="../Images/logo_icon.png" alt="hotel_logo">
@@ -28,8 +34,10 @@
             <p>the best hotel in Tramandaí</p>	
         </div>
     </a>
+    <!-- Navigation menu -->
     <nav class="nav">
         <ul class="menu">
+            <!-- Navigation links -->
             <li class="top"><a class="nav-link" href ="../index.html">HOME</a></li>
             <li><a class="nav-link" href ="rooms.html">ROOMS</a></li>
             <li><a class="nav-link" href ="attraction.html">ATTRACTIONS</a></li>
@@ -39,82 +47,95 @@
 </header>
 <div id="wrapper">
     <div class="room-page">
+        <!-- Title for the rooms page -->
         <h1 class="hotel-title"> Schenkel Hotel Rooms </h1>
+        <!-- Container for room information -->
         <div id="roomcontainer">
+            <!-- Individual room sections -->
             <div class="room">
+                <!-- Image of Standard Apartment -->
                 <img src="../Images/apartment_standard.jpg" alt="Apartment Standard" onclick="redirectToReservationPage('reservation page.html');">
+                <!-- Information about Standard Apartment -->
                 <div class="room-info">
                     <h2>Apartment Standard</h2>
                     <p>Apartments equipped with TV, satellite dish, telephone, internet access point, minibar, 24-hour room service, and ceiling fan.</p>
                 </div>
             </div>
             <div class="room">
+                <!-- Image of Deluxe Apartment -->
                 <img src="../Images/apartment_deluxe.jpg" alt="Apartment Deluxe" onclick="redirectToReservationPage('reservation page.html');">
+                <!-- Information about Deluxe Apartment -->
                 <div class="room-info">
                     <h2>Apartment Deluxe</h2>
                     <p>Apartments equipped with TV, satellite dish, telephone, internet access point, minibar, 24-hour room service, and air conditioning.</p>
                 </div>
             </div>
             <div class="room">
+                <!-- Image of Suite -->
                 <img src="../Images/suite.jpg" alt="Suite" onclick="redirectToReservationPage('reservation page.html');">
+                <!-- Information about Suite -->
                 <div class="room-info">
                     <h2>Suite</h2>
-                    <p>Apartments equipped with TV, satellite dish, telephone, internet access point, minibar, 24-hour room service, air conditioning and bathtub.</p>
+                    <p>Apartments equipped with TV, satellite dish, telephone, internet access point, minibar, 24-hour room service, air conditioning, and bathtub.</p>
                 </div>
             </div>
         </div>
-        <div class="table-container"> <!-- Adiciona uma classe à div que contém a tabela -->
-        <table>
-            <caption>Tariffs</caption>
-            <thead> <!-- get an explanation -->
-            <tr>
-            <!-- Header cells - contains header information (created with the <th> element) . The text in <th> elements are bold and centered by default. -->
-                <th class="standard" colspan="2">Standard Apartment</th>
-                <th class="deluxe" colspan="2">Deluxe Apartment</th>
-                <th class="suite" colspan="2">Suite</th>  </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <!-- Data cells - contains data (created with the <td> element) 
-            The text in <td> elements are regular and left-aligned by default. -->
-                <td>01 Guest</td>
-                <td> € 60 </td>
-                <td>01 Guest</td>
-                <td> € 70 </td>
-                <td>01 Guest</td>
-                <td> € 80 </td>
-
-            </tr>
-            <tr>
-                <td>02 Guests</td>
-                <td> € 80 </td>
-                <td>02 Guests</td>
-                <td> € 90 </td>
-                <td>02 Guests</td>
-                <td> € 100 </td>
-            </tr>
-            <tr>
-                <td>03 Guests</td>
-                <td> € 90 </td>
-                <td>03 Guests</td>
-                <td> € 100 </td>
-                <td>03 Guests</td>
-                <td> € 110 </td>
-            </tr>
-            <tr>
-                <td>04 Guests</td>
-                <td> € 100 </td>
-                <td>04 Guests</td>
-                <td> € 110 </td>
-                <td>04 Guests</td>
-                <td> € 120 </td>    
-            </tr>
-            </tbody>
-        </table>
+        <!-- Table for tariffs of different room types -->
+        <div class="table-container"> <!-- Add a class to the div containing the table -->
+            <table>
+                <caption>Tariffs</caption>
+                <thead> <!-- Explanation -->
+                    <tr>
+                        <!-- Header cells - contains header information (created with the <th> element) . The text in <th> elements are bold and centered by default. -->
+                        <th class="standard" colspan="2">Standard Apartment</th>
+                        <th class="deluxe" colspan="2">Deluxe Apartment</th>
+                        <th class="suite" colspan="2">Suite</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- Data cells - contains data (created with the <td> element) 
+                        The text in <td> elements are regular and left-aligned by default. -->
+                        <td>01 Guest</td>
+                        <td> € 60 </td>
+                        <td>01 Guest</td>
+                        <td> € 70 </td>
+                        <td>01 Guest</td>
+                        <td> € 80 </td>
+                    </tr>
+                    <tr>
+                        <td>02 Guests</td>
+                        <td> € 80 </td>
+                        <td>02 Guests</td>
+                        <td> € 90 </td>
+                        <td>02 Guests</td>
+                        <td> € 100 </td>
+                    </tr>
+                    <tr>
+                        <td>03 Guests</td>
+                        <td> € 90 </td>
+                        <td>03 Guests</td>
+                        <td> € 100 </td>
+                        <td>03 Guests</td>
+                        <td> € 110 </td>
+                    </tr>
+                    <tr>
+                        <td>04 Guests</td>
+                        <td> € 100 </td>
+                        <td>04 Guests</td>
+                        <td> € 110 </td>
+                        <td>04 Guests</td>
+                        <td> € 120 </td>    
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
+    <!-- Footer section -->
     <footer>
+        <!-- Footer information -->
         <div id="footer_info">
+            <!-- Hotel information -->
             <div id="hotel_info">
                 <ul>
                     <li>SCHENKEL HOTEL</li>
@@ -123,6 +144,7 @@
                     <li>Email: <a href="mailto:schenkelhotel.com.br">schenkelhotel.com.br</a></li>
                 </ul>	
             </div>
+            <!-- Meal timings -->
             <div id="hotel_meals">
                 <ul>
                     <li>Meals</li>
@@ -131,6 +153,7 @@
                     <li>Dinner: 19:00 - 22:30</li>
                 </ul>
             </div>
+            <!-- Check-in and check-out timings -->
             <div id="hotel_check_in">
                 <ul>
                     <li>CHECK-IN and OUT</li>
@@ -139,21 +162,25 @@
                 </ul>
             </div>
         </div>
+        <!-- Footer content -->
         <div id="footer_content">
+            <!-- Additional information icons -->
             <div class="text_icon_1">
                 <img src="../images/electric_car_icon.png" alt="electric_car_charge">
                 <p>This hotel has a charging station for electric vehicles.</p>
             </div>
             <div class="text_icon_2">
                 <img src="../images/wifi_icon.png" alt="wifi_icon">
-                <p>High speed Wifi providing.</p>
+                <p>High-speed Wifi provided.</p>
             </div>
         </div>
+        <!-- Copyright information -->
         <div class="copyright">
             <p>Developed by DEIVIDI. All rights reserved.</p>
         </div>
     </footer>
-        <script src="../JS/script.js"></script> <!-- Link to the JavaScript file -->
+    <!-- Link to the JavaScript file -->
+    <script src="../JS/script.js"></script>
 </div>
 </body>
 </html>

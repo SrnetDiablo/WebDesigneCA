@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character encoding and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
     <title>Hotel Schenkel Reservation</title>
+    <!-- Link to external CSS files -->
     <link rel="stylesheet" href="../CSS/stylesheet.css">
     <link rel="stylesheet" href="../CSS/jquery.bxslider.min.css">
-    <!-- Loading Javascript file -->
+    <!-- Loading jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Loading jQuery bxSlider plugin -->
     <script src="../JS/jquery.bxslider.min.js"></script>
+    <!-- Loading custom JavaScript file -->
     <script src="../JS/javascript.js"></script>
-    <!-- Loading favicon file -->
+    <script src="../JS/script.js"></script>
+    <!-- Link to favicon file -->
     <link rel="icon" href="../Images/favicon.png">
-
-    <!-- Import Google Font Oswald -->
+    <!-- Importing Google Font - Oswald -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body onload="setMinDate()"> <!-- Move o evento onload para o corpo do documento -->
+<body onload="setMinDate()"> <!-- Triggering a JavaScript function when the body loads -->
 <header class="header">
-    <!-- logo link -->
+    <!-- Logo and title of the website -->
     <a href="../index.html">
         <div id="logo">
             <img src="../Images/logo_icon.png" alt="hotel_logo">
@@ -29,8 +34,10 @@
             <p>the best hotel in Tramandaí</p>	
         </div>
     </a>
+    <!-- Navigation menu -->
     <nav class="nav">
         <ul class="menu">
+            <!-- Navigation links -->
             <li class="top"><a class="nav-link" href ="../index.html">HOME</a></li>
             <li><a class="nav-link" href ="rooms.html">ROOMS</a></li>
             <li><a class="nav-link" href ="attraction.html">ATTRACTIONS</a></li>
@@ -39,127 +46,140 @@
     </nav>	
 </header>
 <div id="wrapper">
-<div class="reservation-page">
-    <h1 class="hotel-title">Schenkel Hotel</h1>
-    <h2> Please fill out the reservation form to make your booking.</h2> <!-- Added h1 element -->
-    <div id="formcontainer"> <!-- Form container with rounded edges -->
-        <div id="formreservation">
-            <form action="javascript:void(0);" onsubmit="submitForm()">
-                <div class="input-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="input-group">
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
-                </div>
-                <div class="input-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+    <div class="reservation-page">
+        <!-- Hotel title and reservation form introduction -->
+        <h1 class="hotel-title">Schenkel Hotel</h1>
+        <h2> Please fill out the reservation form to make your booking.</h2> <!-- Added h1 element -->
+        <!-- Container for the reservation form -->
+        <div id="formcontainer"> <!-- Form container with rounded edges -->
+            <div id="formreservation">
+                <!-- Reservation form -->
+                <form action="javascript:void(0);" onsubmit="submitForm()">
+                    <!-- Input fields for name, phone, email, check-in, check-out, apartment choice, and number of guests -->
                     <div class="input-group">
-                    <label for="checkin">Check-in Date:</label>
-                    <input type="date" id="checkin" name="checkin" required onchange="calculateDays()">
-                </div>
-                <div class="input-group">
-                    <label for="checkout">Check-out Date:</label>
-                    <input type="date" id="checkout" name="checkout" required onchange="calculateDays()">
-                </div>
-                <div class="input-group">
-                    <label>Choose an Apartment:</label>
-                    <div class="radio-wrapper">
-                        <input type="radio" id="standard" name="apartment" value="standard" checked>
-                        <label for="standard">Standard Apartment</label>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
-                    <div class="radio-wrapper">
-                        <input type="radio" id="deluxe" name="apartment" value="deluxe">
-                        <label for="deluxe">Deluxe Apartment</label>
+                    <div class="input-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
                     </div>
-                    <div class="radio-wrapper">
-                        <input type="radio" id="suite" name="apartment" value="suite">
-                        <label for="suite">Suite</label>
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
-                </div>
-                
-               <div class="input-group">
-                    <label for="adults">Number of Adults:</label>
-                    <select id="adults" name="adults">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                    </select>
-                </div>
-                <div class="input-group">
-                    <label for="children">Number of Children:</label>
-                    <select id="children" name="children">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                    </select>
-                </div>    
-                <input type="submit" value="Submit Reservation">
-                <div id="successMessage" style="display: none;">
-                    Thank you for submitting the form. You will receive an email confirming your reservation. Especially if you are Eugene!!!
-                </div> 
-            </form>
-        </div> 
-                  
-    </div>
-    <div id="additionalInfo">
-        <p>We understand that filling out forms can be time-consuming. That's why we offer three convenient ways to get in touch with us.</p>
-        <ul>
-            <li>If you prefer talking on the phone, give us a call at <a href="tel:05136613001">051-3661-3001</a>.</li>
-            <li>If you're more comfortable with messaging, reach out to us on WhatsApp at <a href="https://wa.me/05102265832">051-0226-5832</a>.</li>
-            <li>And if you'd rather take your time and compose an email, we're always here for you at <a href="mailto:Schenkelhotel@schenkelhotel.com.br">Schenkelhotel@schenkelhotel.com.br</a>.</li>
-        </ul>
-        <p>We want to make it as easy as possible for you to get the help you need.</p>
-    </div>
-    <script src="../JS/script.js"></script> <!-- Link to the JavaScript file -->
+                    <div class="input-group">
+                        <label for="checkin">Check-in Date:</label>
+                        <input type="date" id="checkin" name="checkin" required onchange="calculateDays()">
+                    </div>
+                    <div class="input-group">
+                        <label for="checkout">Check-out Date:</label>
+                        <input type="date" id="checkout" name="checkout" required onchange="calculateDays()">
+                    </div>
+                    <div class="input-group">
+                        <label>Choose an Apartment:</label>
+                        <!-- Radio buttons for apartment selection -->
+                        <div class="radio-wrapper">
+                            <input type="radio" id="standard" name="apartment" value="standard" checked>
+                            <label for="standard">Standard Apartment</label>
+                        </div>
+                        <div class="radio-wrapper">
+                            <input type="radio" id="deluxe" name="apartment" value="deluxe">
+                            <label for="deluxe">Deluxe Apartment</label>
+                        </div>
+                        <div class="radio-wrapper">
+                            <input type="radio" id="suite" name="apartment" value="suite">
+                            <label for="suite">Suite</label>
+                        </div>
+                    </div>
+                    <!-- Dropdowns for number of adults and children -->
+                    <div class="input-group">
+                        <label for="adults">Number of Adults:</label>
+                        <select id="adults" name="adults">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="children">Number of Children:</label>
+                        <select id="children" name="children">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <!-- Submit button for the reservation form -->
+                    <input type="submit" value="Submit Reservation">
+                    <!-- Success message shown after form submission -->
+                    <div id="successMessage" style="display: none;">
+                        Thank you for submitting the form. You will receive an email confirming your reservation. Especially if you are Eugene!!!
+                    </div> 
+                </form>
+            </div> 
+        </div>
+        <!-- Additional contact information -->
+        <div id="additionalInfo">
+            <p>We understand that filling out forms can be time-consuming. That's why we offer three convenient ways to get in touch with us.</p>
+            <ul>
+                <li>If you prefer talking on the phone, give us a call at <a href="tel:05136613001">051-3661-3001</a>.</li>
+                <li>If you're more comfortable with messaging, reach out to us on WhatsApp at <a href="https://wa.me/05102265832">051-0226-5832</a>.</li>
+                <li>And if you'd rather take your time and compose an email, we're always here for you at <a href="mailto:Schenkelhotel@schenkelhotel.com.br">Schenkelhotel@schenkelhotel.com.br</a>.</li>
+            </ul>
+            <p>We want to make it as easy as possible for you to get the help you need.</p>
+        </div>
     </div>
 </div>
-	<footer>
-		<div id="footer_info">
-			<div id="hotel_info">
-				<ul>
-					<li>SCHENKEL HOTEL</li>
-					<li>Address: Avenida Fernandes Bastos, 854 Centro, Tramandaí, RS.</li>
-					<li>Phone: (51) 3661 3001</li>
-					<li>Email: <a href="mailto:schenkelhotel.com.br">schenkelhotel.com.br</a></li>
-				</ul>	
-			</div>
-			<div id="hotel_meals">
-				<ul>
-					<li>Meals</li>
-					<li>Breakfast: 07:00 - 09:30</li>
-					<li>Lunch: 11:30 - 14:00</li>
-					<li>Dinner: 19:00 - 22:30</li>
-				</ul>
-			</div>
-			<div id="hotel_check_in">
-				<ul>
-					<li>CHECK-IN and OUT</li>
-					<li>CHECK-IN: from 14:00</li>
-					<li>CHECK-OUT: until 12:00</li>
-				</ul>
-			</div>
-		</div>
-		<div id="footer_content">
-			<div class="text_icon_1">
-				<img src="../images/electric_car_icon.png" alt="electric_car_charge">
-				<p>This hotel has a charging station for electric vehicles.</p>
-            </div>
-			<div class="text_icon_2">
-				<img src="../images/wifi_icon.png" alt="wifi_icon">
-				<p>High speed Wifi providing.</p>
-            </div>
-		</div>
-		<div class="copyright">
-			<p>Developed by DEIVIDI. All rights reserved.</p>
-		</div>
-	</footer>
+<!-- Footer section -->
+<footer>
+    <!-- Footer information -->
+    <div id="footer_info">
+        <!-- Hotel information -->
+        <div id="hotel_info">
+            <ul>
+                <li>SCHENKEL HOTEL</li>
+                <li>Address: Avenida Fernandes Bastos, 854 Centro, Tramandaí, RS.</li>
+                <li>Phone: (51) 3661 3001</li>
+                <li>Email: <a href="mailto:schenkelhotel.com.br">schenkelhotel.com.br</a></li>
+            </ul>	
+        </div>
+        <!-- Meal timings -->
+        <div id="hotel_meals">
+            <ul>
+                <li>Meals</li>
+                <li>Breakfast: 07:00 - 09:30</li>
+                <li>Lunch: 11:30 - 14:00</li>
+                <li>Dinner: 19:00 - 22:30</li>
+            </ul>
+        </div>
+        <!-- Check-in and check-out timings -->
+        <div id="hotel_check_in">
+            <ul>
+                <li>CHECK-IN and OUT</li>
+                <li>CHECK-IN: from 14:00</li>
+                <li>CHECK-OUT: until 12:00</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Footer content -->
+    <div id="footer_content">
+        <!-- Additional information icons -->
+        <div class="text_icon_1">
+            <img src="../images/electric_car_icon.png" alt="electric_car_charge">
+            <p>This hotel has a charging station for electric vehicles.</p>
+        </div>
+        <div class="text_icon_2">
+            <img src="../images/wifi_icon.png" alt="wifi_icon">
+            <p>High-speed Wifi provided.</p>
+        </div>
+    </div>
+    <!-- Copyright information -->
+    <div class="copyright">
+        <p>Developed by DEIVIDI. All rights reserved.</p>
+    </div>
+</footer>
 </body>
 </html>
-
