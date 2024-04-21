@@ -316,6 +316,13 @@ footer {
     margin: auto; /* Center align the container */
 }
 
+/* Style for the image */
+#image_container:hover, #image_container_2:hover, #image_container_3:hover, #image_container_4:hover{
+	cursor: pointer; /* hover image content*/
+	opacity: 0.7;
+}
+
+
 /* Styling for the text container */
 #text-container, #text-container2, #text-container3, #text-container4 {
     display: none; /* Hide the text container by default */
