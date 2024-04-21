@@ -257,7 +257,7 @@ footer {
 
 /* Background image and color for the wrapper */
 #wrapper {
-    background-image: url(../images/background_img.jpg); /* Background image */
+    background-image: url(../Images/background_img.jpg); /* Background image */
     background-repeat: repeat; /* Repeat the background image */
     background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
     background-blend-mode: lighten; /* Blend mode for the background */
@@ -329,7 +329,7 @@ footer {
 
 /*reservation.html*/
 .reservation-page {
-    background-image: url(../images/background_img.jpg); /* Background image */
+    background-image: url(../Images/background_img.jpg); /* Background image */
     background-blend-mode: lighten; /* Blend mode for the background */
     display: flex;
     justify-content: center;
@@ -406,7 +406,7 @@ footer {
 /* ROOM PAGE*/
 
 .room-page {
-    background-image: url(../images/background_img.jpg); /* Background image */
+    background-image: url(../Images/background_img.jpg); /* Background image */
     background-blend-mode:lighten; /* Blend mode for the background */
     display: flex;
     flex-direction: column;
